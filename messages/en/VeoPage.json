@@ -1,0 +1,117 @@
+{
+  "title": "Veo 3.1 — Google's 4K AI Video Generator with Audio | yino.ai",
+  "description": "Create 4K AI videos with Veo 3.1. Text to video and image to video with native audio, scene extension, and character consistency. Try free.",
+  "hero": {
+    "title": "Veo 3.1 — The First AI Video Generator to Deliver True 4K with Native Audio",
+    "description": "Google DeepMind's Veo 3.1 generates broadcast-quality video at up to 4K resolution with synchronized dialogue, sound effects, and ambient audio — all in one step. Use text prompts, reference images, or first-and-last frame control to shape every scene. Extend clips to over two minutes with seamless Scene Extension."
+  },
+  "features": {
+    "title": "What Makes Veo 3.1 the Standard for AI Filmmaking",
+    "subtitle": "True 4K output, native audio, and scene-level control that no other model matches.",
+    "items": {
+      "item-1": {
+        "title": "True 4K Resolution at Up to 60fps",
+        "description": "Veo 3.1 is the first mainstream AI video generator to output native 4K (3840×2160) — no upscaling artifacts. At up to 60 frames per second, every frame holds broadcast and cinema-grade clarity. Choose 720p or 1080p for faster Veo text to video iterations, or 4K for final production output."
+      },
+      "item-2": {
+        "title": "Synchronized Audio Built Into Every Clip",
+        "description": "Veo 3.1 generates audio natively alongside video. Describe the soundscape you want — dialogue in quotes, specific sound effects, ambient noise — and the Veo AI video generator delivers a complete clip with lip-synced speech, contextual SFX, and environmental audio at 48kHz quality. No separate audio workflow required."
+      },
+      "item-3": {
+        "title": "Ingredients-to-Video Reference System",
+        "description": "Upload up to 3 reference images to guide character appearance, visual style, and scene composition. Veo 3.1 maintains identity consistency across generations — the same character looks the same whether the setting changes from a rooftop to a forest. First-and-last frame control lets you define exactly where your Veo image to video scene begins and ends."
+      },
+      "item-4": {
+        "title": "Scene Extension Beyond Two Minutes",
+        "description": "A single Veo 3.1 generation produces 4 to 8 seconds. Scene Extension chains up to 20 continuations into one seamless video — reaching roughly 148 seconds total. Each extension maintains visual coherence, character consistency, and audio continuity, turning short clips into full narrative sequences."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "How to Create Videos with Veo 3.1",
+    "subtitle": "From prompt to cinematic AI video with native audio.",
+    "steps": {
+      "step-1": {
+        "title": "Write Your Prompt and Add References",
+        "description": "Describe the scene, camera movement, and audio you want. Use cinematic terms like \"tracking shot\" or \"rack focus\" — Veo 3.1 understands professional film language. For Veo image to video, upload reference images to lock character appearance and style. Add first and last frames to control the scene arc."
+      },
+      "step-2": {
+        "title": "Choose Resolution, Duration, and Format",
+        "description": "Select 720p, 1080p, or 4K resolution. Set duration to 4, 6, or 8 seconds per generation. Pick landscape 16:9 for widescreen or portrait 9:16 for vertical platforms like TikTok and Reels. Use Veo 3.1 Fast for quick Veo text to video previews, or standard for maximum visual fidelity."
+      },
+      "step-3": {
+        "title": "Generate, Extend, and Download",
+        "description": "Submit and receive your video with synchronized audio in minutes. Need a longer sequence? Use Scene Extension to add 7 seconds per step — up to 20 extensions for a continuous two-minute video. Download the finished clip ready for publishing."
+      }
+    }
+  },
+  "whyChoose": {
+    "title": "Why Filmmakers and Creators Choose Veo 3.1",
+    "items": {
+      "item-1": {
+        "icon": "🎬",
+        "title": "Broadcast-Ready 4K Output",
+        "description": "Veo 3.1 delivers true 4K at up to 60fps — the only AI video generator producing footage suitable for television, cinema screens, and high-end marketing without upscaling."
+      },
+      "item-2": {
+        "icon": "🔊",
+        "title": "Complete Audio-Video in One Generation",
+        "description": "Dialogue with lip-sync, ambient soundscapes, and timed sound effects are generated alongside video. Veo 3.1 outputs polished clips that need no audio post-production."
+      },
+      "item-3": {
+        "icon": "🎯",
+        "title": "Rock-Solid Character Consistency",
+        "description": "Reference images keep characters looking identical across scenes and extensions. Hair, clothing, and facial features remain stable even through camera angle changes and environment shifts."
+      },
+      "item-4": {
+        "icon": "📐",
+        "title": "Native Vertical Video for Mobile Platforms",
+        "description": "Veo 3.1 composes natively for 9:16 portrait format — no cropping from horizontal footage. Purpose-built framing for TikTok, Instagram Reels, and YouTube Shorts."
+      },
+      "item-5": {
+        "icon": "🎥",
+        "title": "Professional Camera Language Understanding",
+        "description": "Dolly zooms, rack focuses, tracking shots, and POV switches all execute accurately from text prompts. Veo 3.1 interprets cinema terminology the way a director would describe it."
+      },
+      "item-6": {
+        "icon": "⏱️",
+        "title": "Two-Minute Continuous Sequences",
+        "description": "Scene Extension chains 8-second clips into seamless narratives up to 148 seconds. Visual style, character identity, and audio tone stay consistent across every extension."
+      }
+    }
+  },
+  "pricing": {
+    "subtitle": "Veo 3.1 Pricing",
+    "description": "Start creating with free credits. Choose a plan that fits your video production workflow."
+  },
+  "faqs": {
+    "title": "FAQ",
+    "subtitle": "Veo 3.1 — Frequently Asked Questions",
+    "items": {
+      "item-1": {
+        "question": "What resolutions and frame rates does Veo 3.1 support?",
+        "answer": "Veo 3.1 generates video at 720p, 1080p, or true 4K (3840×2160). Standard output runs at 24fps for cinematic content, with up to 60fps available in 4K mode. It's the first mainstream AI video generator to deliver native 4K without upscaling."
+      },
+      "item-2": {
+        "question": "How does Veo 3.1 generate audio with video?",
+        "answer": "Veo 3.1 generates audio natively as part of the video creation process — not as a separate step. Include dialogue in quotes, describe sound effects explicitly, and set the ambient atmosphere in your prompt. The model produces synchronized audio at 48kHz with lip-sync accuracy under 120ms."
+      },
+      "item-3": {
+        "question": "How long can a Veo 3.1 video be?",
+        "answer": "Each generation produces a 4, 6, or 8-second clip. Scene Extension adds 7 seconds per step, and you can chain up to 20 extensions for a continuous video of approximately 148 seconds. The final output is delivered as a single merged file with consistent visuals and audio."
+      },
+      "item-4": {
+        "question": "How does Veo image to video work with reference images?",
+        "answer": "Upload up to 3 reference images to guide Veo 3.1. Use a single image as the opening frame, two images for first-and-last frame control, or three images for style and character consistency across the generation. The model preserves identity, clothing, and visual style from your references."
+      },
+      "item-5": {
+        "question": "Does Veo 3.1 support vertical video for TikTok and Reels?",
+        "answer": "Yes. Veo 3.1 generates native 9:16 portrait video — the model composes specifically for vertical viewing rather than cropping horizontal footage. This means better framing, no quality loss, and output optimized for mobile-first platforms."
+      },
+      "item-6": {
+        "question": "What is the difference between Veo 3.1 standard and fast mode?",
+        "answer": "Veo 3.1 Fast generates video approximately 30% faster than standard mode with nearly identical visual quality — ideal for rapid Veo text to video iteration and previewing. Standard mode maximizes fidelity for final production output."
+      }
+    }
+  }
+}

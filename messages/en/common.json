@@ -1,0 +1,812 @@
+{
+  "Metadata": {
+    "name": "yino.ai",
+    "title": "yino.ai",
+    "description": "AI Video & Image Generator"
+  },
+  "Common": {
+    "premium": "Premium",
+    "login": "Sign In",
+    "logout": "Log out",
+    "signUp": "Sign up",
+    "language": "Switch language",
+    "mode": {
+      "label": "Toggle mode",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "copy": "Copy",
+    "saving": "Saving...",
+    "save": "Save",
+    "loading": "Loading...",
+    "cancel": "Cancel",
+    "logoutFailed": "Failed to log out",
+    "table": {
+      "totalRecords": "Total {count} records",
+      "noResults": "No results",
+      "loading": "Loading...",
+      "columns": "Columns",
+      "rowsPerPage": "Rows per page",
+      "page": "Page",
+      "firstPage": "First Page",
+      "lastPage": "Last Page",
+      "nextPage": "Next Page",
+      "previousPage": "Previous Page",
+      "ascending": "Asc",
+      "descending": "Desc",
+      "resetSorting": "Reset",
+      "hideColumn": "Hide",
+      "viewOptions": "View",
+      "toggleColumns": "Toggle columns",
+      "searchColumns": "Search columns...",
+      "noColumns": "No columns found.",
+      "clearFilters": "Clear filters"
+    }
+  },
+  "NotFoundPage": {
+    "title": "404",
+    "message": "Sorry, the page you are looking for does not exist.",
+    "backToHome": "Back to home"
+  },
+  "ErrorPage": {
+    "title": "Oops! Something went wrong!",
+    "tryAgain": "Try again",
+    "backToHome": "Back to home"
+  },
+  "Newsletter": {
+    "title": "Newsletter",
+    "subtitle": "Join the community",
+    "description": "Subscribe to our newsletter for the latest news and updates",
+    "form": {
+      "email": "Email",
+      "subscribe": "Subscribe",
+      "subscribing": "Subscribing...",
+      "success": "Subscribed successfully",
+      "fail": "Failed to subscribe",
+      "emailValidation": "Please enter a valid email address"
+    }
+  },
+  "AuthPage": {
+    "login": {
+      "title": "Login",
+      "welcomeBack": "Welcome back",
+      "email": "Email",
+      "password": "Password",
+      "signIn": "Sign In",
+      "signUpHint": "Don't have an account? Sign up",
+      "forgotPassword": "Forgot Password?",
+      "signInWithGoogle": "Sign In with Google",
+      "signInWithGitHub": "Sign In with GitHub",
+      "showPassword": "Show password",
+      "hidePassword": "Hide password",
+      "or": "Or continue with",
+      "emailRequired": "Please enter your email",
+      "passwordRequired": "Please enter your password",
+      "captchaInvalid": "Captcha verification failed",
+      "captchaError": "Captcha verification error"
+    },
+    "register": {
+      "title": "Register",
+      "createAccount": "Create an account",
+      "name": "Name",
+      "email": "Email",
+      "password": "Password",
+      "signUp": "Sign Up",
+      "signInHint": "Already have an account? Sign in",
+      "checkEmail": "Please check your email inbox",
+      "showPassword": "Show password",
+      "hidePassword": "Hide password",
+      "nameRequired": "Please enter your name",
+      "emailRequired": "Please enter your email",
+      "passwordRequired": "Please enter your password",
+      "captchaInvalid": "Captcha verification failed",
+      "captchaError": "Captcha verification error"
+    },
+    "forgotPassword": {
+      "title": "Forgot Password",
+      "email": "Email",
+      "send": "Send reset link",
+      "backToLogin": "Back to login",
+      "checkEmail": "Please check your email inbox",
+      "emailRequired": "Please enter your email"
+    },
+    "resetPassword": {
+      "title": "Reset Password",
+      "password": "Password",
+      "reset": "Reset password",
+      "backToLogin": "Back to login",
+      "showPassword": "Show password",
+      "hidePassword": "Hide password",
+      "minLength": "Password must be at least 8 characters"
+    },
+    "error": {
+      "title": "Oops! Something went wrong!",
+      "tryAgain": "Please try again.",
+      "backToLogin": "Back to login",
+      "checkEmail": "Please check your email inbox"
+    },
+    "common": {
+      "termsOfService": "Terms of Service",
+      "privacyPolicy": "Privacy Policy",
+      "byClickingContinue": "By clicking continue, you agree to our ",
+      "and": " and "
+    }
+  },
+  "BlogPage": {
+    "title": "Blog",
+    "description": "Latest news and updates from our team",
+    "subtitle": "Latest news and updates from our team",
+    "author": "Author",
+    "categories": "Categories",
+    "tableOfContents": "Table of Contents",
+    "readTime": "{minutes} min read",
+    "all": "All",
+    "noPostsFound": "No posts found",
+    "allPosts": "All Posts",
+    "morePosts": "More Posts"
+  },
+  "DocsPage": {
+    "toc": "Table of Contents",
+    "search": "Search docs",
+    "lastUpdate": "Last updated on",
+    "searchNoResult": "No results",
+    "previousPage": "Previous",
+    "nextPage": "Next",
+    "chooseLanguage": "Select language",
+    "title": "yino.ai Docs",
+    "homepage": "Back to yino.ai",
+    "PageActions": {
+      "copyMarkdown": "Copy Markdown",
+      "open": "Open",
+      "openInChatGPT": "Open in ChatGPT",
+      "openInClaude": "Open in Claude",
+      "queryHint": "Read {url}, I want to ask questions about it."
+    }
+  },
+  "PremiumContent": {
+    "title": "Unlock Premium Content",
+    "description": "Subscribe to our Pro plan to access all premium content and exclusive content.",
+    "upgradeCta": "Upgrade Now",
+    "benefit1": "All premium content",
+    "benefit2": "Exclusive content",
+    "benefit3": "Cancel anytime",
+    "signIn": "Sign In",
+    "loginRequired": "Sign in to continue reading",
+    "loginDescription": "This is premium content. Sign in to your account to access the full content.",
+    "checkingAccess": "Checking access...",
+    "loadingContent": "Loading full content..."
+  },
+  "Marketing": {
+    "navbar": {
+      "aiVideo": {
+        "title": "AI Video",
+        "items": {
+          "seedance": {
+            "title": "Seedance 2.0",
+            "description": "High-quality AI video generation with text & image to video"
+          },
+          "seedance15": {
+            "title": "Seedance 1.5",
+            "description": "AI video with native audio, lip sync, and video extend"
+          },
+          "veo": {
+            "title": "Veo 3.1",
+            "description": "Cinematic AI video with keyframes and reference control"
+          }
+        }
+      },
+      "aiImage": {
+        "title": "AI Image",
+        "items": {
+          "seedream": {
+            "title": "Seedream 4.5",
+            "description": "Photorealistic AI image generation and editing"
+          }
+        }
+      },
+      "pricing": {
+        "title": "Pricing"
+      },
+      "blog": {
+        "title": "Blog"
+      },
+      "docs": {
+        "title": "Docs"
+      },
+      "pages": {
+        "title": "Pages",
+        "items": {
+          "privacyPolicy": {
+            "title": "Privacy Policy",
+            "description": "How we protect and handle your data"
+          },
+          "termsOfService": {
+            "title": "Terms of Service",
+            "description": "The terms and conditions for using Yino AI"
+          }
+        }
+      },
+      "blocks": {
+        "title": "Blocks",
+        "items": {
+          "magicui": {
+            "title": "MagicUI Blocks"
+          },
+          "hero-section": {
+            "title": "Hero Blocks"
+          },
+          "logo-cloud": {
+            "title": "Logo Cloud Blocks"
+          },
+          "integrations": {
+            "title": "Integrations Blocks"
+          },
+          "features": {
+            "title": "Features Blocks"
+          },
+          "content": {
+            "title": "Content Blocks"
+          },
+          "stats": {
+            "title": "Stats Blocks"
+          },
+          "team": {
+            "title": "Team Blocks"
+          },
+          "testimonials": {
+            "title": "Testimonials Blocks"
+          },
+          "callToAction": {
+            "title": "Call to Action Blocks"
+          },
+          "footer": {
+            "title": "Footer Blocks"
+          },
+          "pricing": {
+            "title": "Pricing Blocks"
+          },
+          "comparator": {
+            "title": "Comparator Blocks"
+          },
+          "faq": {
+            "title": "FAQ Blocks"
+          },
+          "login": {
+            "title": "Login Blocks"
+          },
+          "signup": {
+            "title": "Signup Blocks"
+          },
+          "forgot-password": {
+            "title": "Forgot Password Blocks"
+          },
+          "contact": {
+            "title": "Contact Blocks"
+          }
+        }
+      }
+    },
+    "footer": {
+      "tagline": "AI image & video generation for you and your agent",
+      "product": {
+        "title": "Product",
+        "items": {
+          "features": "Features",
+          "pricing": "Pricing",
+          "faq": "FAQ"
+        }
+      },
+      "models": {
+        "title": "Models",
+        "items": {
+          "seedance": "Seedance 2.0",
+          "seedance15": "Seedance 1.5",
+          "veo": "Veo 3.1",
+          "seedream": "Seedream 4.5"
+        }
+      },
+      "resources": {
+        "title": "Resources",
+        "items": {
+          "blog": "Blog",
+          "docs": "Documentation"
+        }
+      },
+      "legal": {
+        "title": "Legal",
+        "items": {
+          "privacyPolicy": "Privacy Policy",
+          "termsOfService": "Terms of Service"
+        }
+      },
+      "compliance": "Users may only generate their own likeness or AI-original virtual faces. Generating unauthorized likenesses of others — especially celebrities and public figures — is strictly prohibited. This platform provides technology services only; users are solely responsible for the legality of uploaded materials and generated content. AI-generated content must be labeled as such when published. Users must comply with all applicable laws and regulations in their jurisdiction."
+    },
+    "avatar": {
+      "dashboard": "Dashboard",
+      "billing": "Billing",
+      "credits": "Credits",
+      "creditHistory": "Credit history",
+      "purchaseCredits": "Purchase credits",
+      "settings": "Settings"
+    }
+  },
+  "Dashboard": {
+    "dashboard": {
+      "title": "Dashboard"
+    },
+    "tools": {
+      "title": "Tools",
+      "generate": {
+        "title": "Generate"
+      },
+      "gallery": {
+        "title": "Gallery"
+      }
+    },
+    "admin": {
+      "title": "Admin",
+      "users": {
+        "title": "Users",
+        "fakeData": "Note: Faked data for demonstration, some features are disabled",
+        "error": "Failed to get users",
+        "search": "Search users...",
+        "noResults": "No users found",
+        "columns": {
+          "columns": "Columns",
+          "name": "Name",
+          "email": "Email",
+          "role": "Role",
+          "createdAt": "Created At",
+          "customerId": "Customer ID",
+          "status": "Status",
+          "banReason": "Ban Reason",
+          "banExpires": "Ban Expires"
+        },
+        "admin": "Admin",
+        "user": "User",
+        "email": {
+          "verified": "Email Verified",
+          "unverified": "Email Unverified"
+        },
+        "emailCopied": "Email copied to clipboard",
+        "banned": "Banned",
+        "active": "Active",
+        "inactive": "Inactive",
+        "clearSearch": "Clear search",
+        "joined": "Joined at",
+        "updated": "Updated at",
+        "ban": {
+          "reason": "Ban Reason",
+          "reasonPlaceholder": "Enter the reason for banning this user",
+          "defaultReason": "Spamming",
+          "never": "Never",
+          "expires": "Ban Expires",
+          "selectDate": "Select Date",
+          "button": "Ban User",
+          "success": "User has been banned",
+          "error": "Failed to ban user"
+        },
+        "unban": {
+          "button": "Unban User",
+          "success": "User has been unbanned",
+          "error": "Failed to unban user"
+        },
+        "close": "Close"
+      }
+    },
+    "settings": {
+      "title": "Settings",
+      "profile": {
+        "title": "Profile",
+        "description": "Manage your account information",
+        "avatar": {
+          "title": "Avatar",
+          "description": "Click upload button to upload a custom one",
+          "recommendation": "An avatar is optional but strongly recommended",
+          "uploading": "Uploading...",
+          "uploadAvatar": "Upload Avatar",
+          "success": "Avatar updated successfully",
+          "fail": "Failed to update avatar"
+        },
+        "name": {
+          "title": "Name",
+          "description": "Please enter your display name",
+          "placeholder": "Enter your name",
+          "minLength": "Please use 3 characters at minimum",
+          "maxLength": "Please use 30 characters at maximum",
+          "hint": "Please use 3-30 characters for your name",
+          "success": "Name updated successfully",
+          "fail": "Failed to update name",
+          "saving": "Saving...",
+          "save": "Save"
+        }
+      },
+      "billing": {
+        "title": "Billing",
+        "description": "Manage your subscription and billing details",
+        "status": {
+          "active": "Active",
+          "trial": "Trial",
+          "free": "Free"
+        },
+        "interval": {
+          "month": "month",
+          "year": "year",
+          "oneTime": "one-time"
+        },
+        "currentPlan": {
+          "title": "Current Plan",
+          "description": "Your current plan details",
+          "noPlan": "You have no active plan"
+        },
+        "CustomerPortalButton": {
+          "loading": "Loading...",
+          "createCustomerPortalFailed": "Failed to open Stripe customer portal"
+        },
+        "price": "Price:",
+        "periodStartDate": "Period start date:",
+        "periodEndDate": "Period end date:",
+        "trialEnds": "Trial ends:",
+        "freePlanMessage": "You are currently on the free plan with limited features",
+        "manageSubscription": "Manage Subscription and Billing",
+        "upgradePlan": "Upgrade Plan",
+        "retry": "Retry",
+        "errorMessage": "Failed to get data",
+        "paymentSuccess": "Payment success"
+      },
+      "payment": {
+        "processing": {
+          "title": "Processing Payment",
+          "description": "Please wait while we confirm your payment..."
+        },
+        "success": {
+          "title": "Payment Success",
+          "description": "Redirecting automatically..."
+        },
+        "failed": {
+          "title": "Payment Failed",
+          "description": "There was an issue processing your payment."
+        },
+        "timeout": {
+          "title": "Processing Timeout",
+          "description": "Payment processing is taking longer than expected."
+        },
+        "retry": "Retry"
+      },
+      "credits": {
+        "title": "Credits",
+        "description": "Manage your credit transactions",
+        "tabs": {
+          "balance": "Balance",
+          "transactions": "Transactions"
+        },
+        "balance": {
+          "title": "Credit Balance",
+          "description": "Your credit balance",
+          "credits": "Credits",
+          "creditsDescription": "You have {credits} credits",
+          "creditsExpired": "Credits expired",
+          "creditsAdded": "Credits have been added to your account",
+          "viewTransactions": "View Credit Transactions",
+          "retry": "Retry",
+          "subscriptionBalance": "Subscription",
+          "purchasedBalance": "Permanent",
+          "pendingBalance": "Pending",
+          "subscriptionTooltip": "Credits from your subscription plan, reset each billing cycle",
+          "purchasedTooltip": "Credits purchased separately, never expire",
+          "pendingTooltip": "Credits reserved for generations in progress",
+          "manageCredits": "Manage Credits",
+          "topUp": "Top Up"
+        },
+        "packages": {
+          "title": "Credit Packages",
+          "description": "Purchase additional credits to use our services",
+          "quickPurchaseTitle": "Quick purchase a top-up pack",
+          "purchase": "Purchase",
+          "subscribeToPurchase": "Subscribe to purchase",
+          "processing": "Processing...",
+          "popular": "Popular",
+          "completePurchase": "Complete Your Purchase",
+          "failedToFetchCredits": "Failed to fetch credits",
+          "failedToCreatePaymentIntent": "Failed to create payment intent",
+          "failedToInitiatePayment": "Failed to initiate payment",
+          "cancel": "Cancel",
+          "purchaseFailed": "Purchase credits failed",
+          "checkoutFailed": "Failed to create checkout session",
+          "loading": "Loading...",
+          "pay": "Pay"
+        },
+        "transactions": {
+          "title": "Credit Transactions",
+          "error": "Failed to get credit transactions",
+          "search": "Search credit transactions...",
+          "clearSearch": "Clear search",
+          "paymentIdCopied": "Payment ID copied to clipboard",
+          "noResults": "No results found",
+          "columns": {
+            "columns": "Columns",
+            "id": "ID",
+            "type": "Type",
+            "description": "Description",
+            "amount": "Amount",
+            "remainingAmount": "Remaining Amount",
+            "paymentId": "Payment ID",
+            "expirationDate": "Expiration Date",
+            "expirationDateProcessedAt": "Expiration Processed At",
+            "createdAt": "Created At",
+            "updatedAt": "Updated At"
+          },
+          "types": {
+            "MONTHLY_REFRESH": "Monthly Refresh",
+            "REGISTER_GIFT": "Register Gift",
+            "PURCHASE": "Purchased Credits",
+            "USAGE": "Consumed Credits",
+            "PENDING": "Pending",
+            "PENDING_CANCEL": "Pending Released",
+            "SUBSCRIPTION_RENEWAL": "Subscription Renewal",
+            "SUBSCRIPTION_RESET": "Subscription Reset",
+            "SUBSCRIPTION_EXPIRE": "Subscription Expired",
+            "LIFETIME_MONTHLY": "Lifetime Monthly"
+          },
+          "detailViewer": {
+            "title": "Credit Transaction Detail",
+            "close": "Close"
+          },
+          "expired": "Expired",
+          "never": "Never"
+        }
+      },
+      "notification": {
+        "title": "Notification",
+        "description": "Manage your notification preferences",
+        "newsletter": {
+          "title": "Newsletter Subscription",
+          "description": "Manage your newsletter subscription preferences",
+          "label": "Subscribe to newsletter",
+          "hint": "You can change your subscription preferences at any time",
+          "emailRequired": "Email is required to subscribe to the newsletter",
+          "subscribeSuccess": "Successfully subscribed to the newsletter",
+          "subscribeFail": "Failed to subscribe to the newsletter",
+          "unsubscribeSuccess": "Successfully unsubscribed from the newsletter",
+          "unsubscribeFail": "Failed to unsubscribe from the newsletter",
+          "error": "An error occurred while updating your subscription"
+        }
+      },
+      "security": {
+        "title": "Security",
+        "description": "Manage your security settings",
+        "updatePassword": {
+          "title": "Change Password",
+          "description": "Enter your current password and a new password",
+          "currentPassword": "Current Password",
+          "currentRequired": "Current password is required",
+          "newPassword": "New Password",
+          "newMinLength": "Password must be at least 8 characters",
+          "hint": "Please use at least 8 characters for password",
+          "showPassword": "Show password",
+          "hidePassword": "Hide password",
+          "success": "Password updated successfully",
+          "fail": "Failed to update password",
+          "saving": "Saving...",
+          "save": "Save"
+        },
+        "resetPassword": {
+          "title": "Reset Password",
+          "description": "Reset password to enable email login",
+          "info": "Resetting your password will allow you to sign in using your email and password in addition to your social login methods. You will receive an email with instructions to reset your password",
+          "button": "Reset Password"
+        },
+        "deleteAccount": {
+          "title": "Delete Account",
+          "description": "Permanently remove your account and all of its contents",
+          "warning": "This action is not reversible, so please continue with caution",
+          "button": "Delete Account",
+          "confirmTitle": "Delete Account",
+          "confirmDescription": "Are you sure you want to delete your account? This action cannot be undone.",
+          "confirm": "Delete",
+          "cancel": "Cancel",
+          "deleting": "Deleting...",
+          "success": "Account deleted successfully",
+          "fail": "Failed to delete account"
+        }
+      }
+    },
+    "upgrade": {
+      "title": "40% OFF Launch Sale",
+      "description": "Get more credits, create more videos. Don't miss out.",
+      "button": "Claim Discount"
+    }
+  },
+  "Mail": {
+    "common": {
+      "team": "{name} Team",
+      "copyright": "©️ {year} All Rights Reserved."
+    },
+    "verifyEmail": {
+      "title": "Hi, {name}.",
+      "body": "Please click the link below to verify your email address.",
+      "confirmEmail": "Confirm email",
+      "subject": "Verify your email"
+    },
+    "forgotPassword": {
+      "title": "Hi, {name}.",
+      "body": "Please click the link below to reset your password.",
+      "resetPassword": "Reset password",
+      "subject": "Reset your password"
+    },
+    "subscribeNewsletter": {
+      "body": "Thank you for subscribing to the newsletter. We will keep you updated with the latest news and updates.",
+      "subject": "Thanks for subscribing"
+    },
+    "contactMessage": {
+      "name": "Name: {name}",
+      "email": "Email: {email}",
+      "message": "Message: {message}",
+      "subject": "Contact Message from Website"
+    }
+  },
+  "AITextPage": {
+    "title": "AI Text Demo",
+    "description": "Analyze web content with AI to extract key information, features, and insights",
+    "content": "Web Content Analyzer",
+    "subtitle": "Enter a website URL to get AI-powered analysis of its content",
+    "analyzer": {
+      "title": "Web Content Analyzer",
+      "description": "Analyze any website content using AI to extract structured information",
+      "placeholder": "Enter website URL (e.g., https://example.com)",
+      "button": "Analyze Website",
+      "loading": {
+        "scraping": "Scraping website content...",
+        "analyzing": "Analyzing content with AI..."
+      },
+      "results": {
+        "title": "Analysis Results",
+        "newAnalysis": "Analyze Another Website",
+        "sections": {
+          "title": "Title",
+          "description": "Description",
+          "introduction": "Introduction",
+          "features": "Features",
+          "pricing": "Pricing",
+          "useCases": "Use Cases",
+          "screenshot": "Website Screenshot"
+        }
+      },
+      "errors": {
+        "invalidUrl": "Please enter a valid URL starting with http:// or https://",
+        "analysisError": "Failed to analyze website. Please try again.",
+        "networkError": "Network error. Please check your connection and try again.",
+        "insufficientCredits": "Insufficient credits. Please purchase more credits to continue."
+      }
+    },
+    "features": {
+      "scraping": {
+        "title": "Smart Web Scraping",
+        "description": "Advanced web scraping technology extracts clean, structured content from any website"
+      },
+      "analysis": {
+        "title": "AI-Powered Analysis",
+        "description": "Intelligent AI analysis extracts key insights, features, and structured information"
+      },
+      "results": {
+        "title": "Structured Results",
+        "description": "Get organized, easy-to-read results with clear sections and actionable insights"
+      }
+    }
+  },
+  "AIImagePage": {
+    "title": "AI Image",
+    "description": "MkSaaS lets you make AI SaaS in days, simply and effortlessly"
+  },
+  "AIChatPage": {
+    "title": "AI Chat",
+    "description": "MkSaaS lets you make AI SaaS in days, simply and effortlessly"
+  },
+  "AIVideoPage": {
+    "title": "AI Video",
+    "description": "MkSaaS lets you make AI SaaS in days, simply and effortlessly"
+  },
+  "AIAudioPage": {
+    "title": "AI Audio",
+    "description": "MkSaaS lets you make AI SaaS in days, simply and effortlessly"
+  },
+  "PricePlans": {
+    "free": {
+      "name": "Free",
+      "description": "Try Seedance 2.0 with real human faces",
+      "features": {
+        "feature-1": "Free credits on sign-up",
+        "feature-2": "Seedance 2.0 human face supported",
+        "feature-3": "No queue — instant generation",
+        "feature-4": "Native audio output"
+      },
+      "limits": {
+        "limit-1": "Limited credits",
+        "limit-2": "Standard support"
+      }
+    },
+    "basic": {
+      "name": "Starter",
+      "description": "For creators using AI video regularly",
+      "features": {
+        "feature-1": "Up to 720 seconds of AI video",
+        "feature-2": "Up to 720 images",
+        "feature-3": "Human face generation",
+        "feature-4": "No queue, unlimited concurrency",
+        "feature-5": "No watermark",
+        "feature-6": "No AI training"
+      },
+      "monthlyFeatures": {
+        "feature-1": "Up to 60 seconds of AI video",
+        "feature-2": "Up to 60 images",
+        "feature-3": "Human face generation",
+        "feature-4": "No queue, unlimited concurrency",
+        "feature-5": "No watermark",
+        "feature-6": "No AI training"
+      },
+      "limits": {
+        "limit-1": "Standard support"
+      }
+    },
+    "pro": {
+      "name": "Creator",
+      "description": "Best for AI video power creators",
+      "features": {
+        "feature-1": "Up to 2,400 seconds of AI video",
+        "feature-2": "Up to 2,400 images",
+        "feature-3": "Human face generation",
+        "feature-4": "No queue, unlimited concurrency",
+        "feature-5": "No watermark",
+        "feature-6": "No AI training",
+        "feature-7": "Commercial license",
+        "feature-8": "Priority support"
+      },
+      "monthlyFeatures": {
+        "feature-1": "Up to 200 seconds of AI video",
+        "feature-2": "Up to 200 images",
+        "feature-3": "Human face generation",
+        "feature-4": "No queue, unlimited concurrency",
+        "feature-5": "No watermark",
+        "feature-6": "No AI training",
+        "feature-7": "Commercial license",
+        "feature-8": "Priority support"
+      },
+      "limits": {}
+    },
+    "premium": {
+      "name": "Pro",
+      "description": "For teams and high-volume AI video production",
+      "features": {
+        "feature-1": "Up to 4,200 seconds of AI video",
+        "feature-2": "Up to 4,200 images",
+        "feature-3": "Human face generation",
+        "feature-4": "No queue, unlimited concurrency",
+        "feature-5": "No watermark",
+        "feature-6": "No AI training",
+        "feature-7": "Commercial license",
+        "feature-8": "Priority support"
+      },
+      "monthlyFeatures": {
+        "feature-1": "Up to 350 seconds of AI video",
+        "feature-2": "Up to 350 images",
+        "feature-3": "Human face generation",
+        "feature-4": "No queue, unlimited concurrency",
+        "feature-5": "No watermark",
+        "feature-6": "No AI training",
+        "feature-7": "Commercial license",
+        "feature-8": "Priority support"
+      }
+    },
+    "onetime": {
+      "name": "Credit Pack",
+      "description": "One-time Seedance 2.0 credits, no subscription",
+      "features": {
+        "feature-1": "20,000 credits",
+        "feature-2": "Credits never expire",
+        "feature-3": "All models including Seedance 2.0"
+      }
+    }
+  },
+  "CreditPackages": {}
+}

@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "title": "Gallery - MkSaaS",
+    "description": "Reference gallery showcasing dashboard-style layouts and data visualization blocks."
+  },
+  "hero": {
+    "title": "Gallery",
+    "description": "A reference page for our dashboard-style blocks, charts, and tables."
+  },
+  "seo": {
+    "title": "SEO",
+    "subtitle": "Reference-ready structure",
+    "description": "Structured sections, clear headings, and scannable content for fast indexing.",
+    "items": [
+      {
+        "title": "Semantic hierarchy",
+        "description": "H1, H2, and H3 levels aligned to page intent."
+      },
+      {
+        "title": "Consistent layout",
+        "description": "Reusable blocks that keep content readable and organized."
+      },
+      {
+        "title": "Search snippets",
+        "description": "Metadata-ready sections for stronger previews."
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+# OpenClaw local dev — runs independently from the main project
+# Usage: docker compose -f openclaw/docker-compose.yml up -d
+name: openclaw-dev
+
+services:
+  gateway:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      HOME: /home/node
+      TERM: xterm-256color
+      OPENCLAW_GATEWAY_TOKEN: ${OPENCLAW_GATEWAY_TOKEN:-dev-openclaw-token}
+      MINIMAX_API_KEY: ${MINIMAX_API_KEY:-}
+    volumes:
+      # Mount config and skills for live editing during dev
+      - ./config:/home/node/.openclaw
+      - ./workspace:/home/node/.openclaw/workspace
+    ports:
+      - "18789:18789"
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:18789/healthz').then((r)=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

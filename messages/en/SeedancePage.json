@@ -1,0 +1,117 @@
+{
+  "title": "Seedance 2.0 — We Jailbreaked It. Real Human Face, No Queue | yino.ai",
+  "description": "Real Seedance 2.0 from certified partner. Human face supported, no strict moderation, no queue, unlimited concurrency. Native audio, 2K resolution. Many sites fake it with Veo/Kling.",
+  "hero": {
+    "title": "Seedance 2.0 — Generate Cinematic Video with Sound, Motion, and Story",
+    "description": "Seedance 2.0 is ByteDance's most advanced AI video generator. Create stunning 2K videos with synchronized dialogue, music, and sound effects — all from a single prompt. Upload reference images, video clips, or audio to guide every detail. The #1 ranked AI video model on Artificial Analysis."
+  },
+  "features": {
+    "title": "What Seedance 2.0 Delivers That Other Models Can't",
+    "subtitle": "Native audio, physics-aware motion, and cinematic camera work — built into every generation.",
+    "items": {
+      "item-1": {
+        "title": "Audio and Video Generated Together",
+        "description": "Seedance 2.0 generates audio natively alongside video — not as a post-processing step. Music carries deep bass and cinematic warmth. Dialogue comes through with precise lip-sync. Sound effects land exactly on cue. No separate audio production needed — you get a complete, polished clip in one generation."
+      },
+      "item-2": {
+        "title": "Up to 12 Reference Files in One Generation",
+        "description": "Guide your Seedance 2.0 video with up to 9 reference images, 3 video clips, and 3 audio tracks simultaneously. Use the @ mention system to specify exactly how each file shapes the output — control character appearance, motion style, and audio mood all within a single Seedance text to video or image to video generation."
+      },
+      "item-3": {
+        "title": "Physics That Feel Real",
+        "description": "Seedance 2.0 understands how objects interact under force. Collisions carry weight, fabric tears and drapes realistically, and characters move with physical believability — even in high-action sequences like fights, chases, and explosions. This physics-aware Seedance AI video generator produces motion that other models simply cannot match."
+      },
+      "item-4": {
+        "title": "Director-Level Camera Control",
+        "description": "Describe the shot you want and Seedance 2.0 executes it. Dolly zooms, rack focuses, tracking shots, POV switches, and smooth handheld movement all work as expected. Within a single 15-second generation, Seedance 2.0 can produce multi-shot sequences with natural cuts and transitions — like an edited scene, not a single clip."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "How to Create Videos with Seedance 2.0",
+    "subtitle": "From idea to cinematic AI video in three steps.",
+    "steps": {
+      "step-1": {
+        "title": "Describe Your Scene or Upload References",
+        "description": "Write a prompt describing the action, mood, and camera work. For Seedance image to video, upload reference images to define characters and style. Add video clips for motion reference or audio files to set the soundtrack — Seedance 2.0 accepts all four input types."
+      },
+      "step-2": {
+        "title": "Choose Resolution, Duration, and Aspect Ratio",
+        "description": "Select from multiple resolutions up to native 2K. Set video duration from 4 to 15 seconds. Pick an aspect ratio — 16:9 for widescreen, 9:16 for vertical, or 1:1 for social. Use fast mode for quick Seedance text to video previews, or standard for maximum cinematic quality."
+      },
+      "step-3": {
+        "title": "Generate and Download Your Video",
+        "description": "Hit generate and Seedance 2.0 creates your video with synchronized audio in minutes. Download the finished clip — complete with music, dialogue, and sound effects — ready for publishing, editing, or sharing. No post-production required."
+      }
+    }
+  },
+  "whyChoose": {
+    "title": "Why Creators Are Switching to Seedance 2.0",
+    "items": {
+      "item-1": {
+        "icon": "🎬",
+        "title": "Native 2K Resolution",
+        "description": "Seedance 2.0 outputs video at native 2K resolution — sharper and more detailed than the 1080p ceiling of most competing AI video generators. Every frame holds up on large screens."
+      },
+      "item-2": {
+        "icon": "🔊",
+        "title": "Complete Audio-Video Output",
+        "description": "No more silence or generic background music. Seedance 2.0 generates dialogue with lip-sync, ambient sound, music, and effects as part of the video — ready to share without audio editing."
+      },
+      "item-3": {
+        "icon": "🎥",
+        "title": "Multi-Shot Sequences in One Generation",
+        "description": "A single Seedance 2.0 generation can include multiple shots with natural cuts and transitions. Get an edited sequence, not just a static clip — ideal for music video scenes and short narratives."
+      },
+      "item-4": {
+        "icon": "🖼️",
+        "title": "Multimodal Reference System",
+        "description": "Upload images for character design, video clips for motion style, and audio for soundtrack direction. Seedance 2.0 uses all references together with its @ mention system to match your creative vision precisely."
+      },
+      "item-5": {
+        "icon": "🏆",
+        "title": "Ranked #1 in Blind Evaluations",
+        "description": "Seedance 2.0 leads both text-to-video and image-to-video categories on Artificial Analysis blind-vote leaderboards — the industry's most trusted independent benchmark for AI video quality."
+      },
+      "item-6": {
+        "icon": "⚡",
+        "title": "30% Faster Than Previous Generation",
+        "description": "Architecture optimizations deliver 30% faster throughput compared to Seedance 1.5 Pro. Spend less time waiting and more time creating with the Seedance AI video generator."
+      }
+    }
+  },
+  "pricing": {
+    "subtitle": "Seedance 2.0 Pricing",
+    "description": "Start creating with free credits. Choose a plan that matches your video production needs."
+  },
+  "faqs": {
+    "title": "FAQ",
+    "subtitle": "Seedance 2.0 — Frequently Asked Questions",
+    "items": {
+      "item-1": {
+        "question": "What resolution and duration does Seedance 2.0 support?",
+        "answer": "Seedance 2.0 generates video at up to native 2K resolution (2048×1080 for landscape, 1080×2048 for portrait). Each generation produces clips from 4 to 15 seconds. You can also choose 480p or 1080p depending on your speed and quality preference."
+      },
+      "item-2": {
+        "question": "How does Seedance 2.0 generate audio with video?",
+        "answer": "Seedance 2.0 uses a unified audio-video joint generation architecture. Music, dialogue, sound effects, and ambient audio are created simultaneously with the video — not layered on afterward. Dialogue includes precise lip-sync, and sound effects are timed to on-screen action."
+      },
+      "item-3": {
+        "question": "What types of files can I upload as references for Seedance 2.0?",
+        "answer": "Seedance 2.0 accepts up to 9 reference images, 3 video clips, and 3 audio files in a single generation. Use images to define character appearance and style, video clips to guide motion and camera work, and audio files to set the soundtrack or dialogue. Reference each file with the @ mention system in your prompt."
+      },
+      "item-4": {
+        "question": "Can Seedance 2.0 create multi-shot video sequences?",
+        "answer": "Yes. Within its 15-second generation window, Seedance 2.0 can produce multiple shots with natural cuts, transitions, and camera angle changes. The result feels like an edited sequence rather than a single continuous clip — useful for music videos, short films, and social content."
+      },
+      "item-5": {
+        "question": "How does Seedance image to video work?",
+        "answer": "Upload one or more reference images and describe the motion, camera angle, and mood in your prompt. Seedance 2.0 uses those images to maintain character identity, scene composition, and visual style while animating them into a full video with audio. You can use a single image as an opening frame or multiple images for different characters and scenes."
+      },
+      "item-6": {
+        "question": "How long does it take to generate a Seedance 2.0 video?",
+        "answer": "Generation typically takes a few minutes depending on resolution, duration, and server load. Fast mode delivers quicker results for Seedance text to video previews, while standard mode maximizes visual and audio quality for final output."
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1774596340084,
+      "tag": "0000_icy_calypso",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1774686765465,
+      "tag": "0001_add-user-conversion-and-payment-metadata",
+      "breakpoints": true
+    }
+  ]
+}

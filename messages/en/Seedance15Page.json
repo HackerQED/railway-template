@@ -1,0 +1,117 @@
+{
+  "title": "Seedance 1.5 — AI Video with Built-In Audio & Lip Sync | yino.ai",
+  "description": "Generate AI videos with Seedance 1.5 Pro. Seedance AI video generator with native audio, multi-language lip sync, Seedance text to video and image to video at 1080p.",
+  "hero": {
+    "title": "Seedance 1.5 — Turn Any Idea into Video with Synchronized Sound and Speech",
+    "description": "Seedance 1.5 Pro from ByteDance is the Seedance AI video generator that brings audio-video joint generation to your creative workflow. Use Seedance text to video to produce 1080p clips at 24fps from a single prompt, complete with dialogue, sound effects, and ambient audio generated in one pass. Use Seedance image to video to animate uploaded photos with full motion and synchronized sound. Seedance 1.5 delivers multi-language lip sync across English, Mandarin, Japanese, Korean, Spanish, and more. Powered by a Dual-Branch Diffusion Transformer with 10x inference acceleration, this Seedance AI video generator makes professional video production accessible to everyone."
+  },
+  "features": {
+    "title": "The Breakthrough Features Behind Seedance 1.5 Pro",
+    "subtitle": "Audio-video joint generation, multi-language lip sync, and flexible input modes — all in one Seedance AI video generator.",
+    "items": {
+      "item-1": {
+        "title": "Audio and Video Born Together",
+        "description": "Seedance 1.5 generates dialogue, sound effects, and ambient audio alongside every frame of video in one unified pass. There is no separate audio step. This Seedance AI video generator synchronizes footsteps to walking, crashes to impacts, and music to mood — producing complete scenes that sound as good as they look."
+      },
+      "item-2": {
+        "title": "Multi-Language Lip Sync That Matches Every Word",
+        "description": "Characters in Seedance 1.5 videos speak with accurate lip movements across English, Mandarin, Japanese, Korean, and Spanish. The Seedance text to video pipeline maps phonemes to facial motion, so mouth shapes match syllables precisely. Create multilingual video content with this Seedance AI video generator without dubbing or manual animation."
+      },
+      "item-3": {
+        "title": "Animate Any Photo with First and Last Frame Control",
+        "description": "Upload a starting image and optionally a final frame to guide the motion path of your Seedance 1.5 generation. The Seedance image to video mode preserves character identity, scene composition, and lighting between frames. Define exactly where your scene begins and ends — Seedance image to video fills in every transition with natural motion."
+      },
+      "item-4": {
+        "title": "Accelerated Generation Without Quality Loss",
+        "description": "Seedance 1.5 Pro achieves 10x inference acceleration through its optimized Dual-Branch Diffusion Transformer architecture. Every Seedance 1.5 video renders at full 1080p resolution and 24 frames per second. Faster Seedance text to video and Seedance image to video generation means more iterations and quicker creative cycles."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "How to Make Videos with Seedance 1.5",
+    "subtitle": "Three steps from concept to finished video with synchronized audio using our Seedance AI video generator.",
+    "steps": {
+      "step-1": {
+        "title": "Write a Prompt or Upload Your Image",
+        "description": "Describe the scene, characters, action, and mood you want. For Seedance text to video, your written prompt is the only input needed — the Seedance AI video generator handles every visual and audio decision. For Seedance image to video, upload a reference image as the starting frame and optionally set a last frame to control the motion direction. Seedance 1.5 supports both workflows."
+      },
+      "step-2": {
+        "title": "Set Duration and Aspect Ratio",
+        "description": "Choose your video length between 4 and 12 seconds. Pick the aspect ratio that fits your platform — 16:9 for landscape, 9:16 for vertical stories and reels, or 1:1 for square posts. Whether you chose Seedance text to video or Seedance image to video, Seedance 1.5 generates all formats at 1080p resolution and 24fps for smooth playback."
+      },
+      "step-3": {
+        "title": "Generate and Download Your Complete Video",
+        "description": "Press generate and the Seedance 1.5 Pro model creates your video with matching audio in minutes. Download the finished Seedance text to video or Seedance image to video clip complete with dialogue, effects, and ambient sound. This Seedance AI video generator delivers ready-to-publish output — no post-production audio work required."
+      }
+    }
+  },
+  "whyChoose": {
+    "title": "Why Seedance 1.5 Stands Out Among AI Video Generators",
+    "items": {
+      "item-1": {
+        "icon": "🎙️",
+        "title": "One-Pass Audio-Video Generation",
+        "description": "Seedance 1.5 produces synchronized audio and video together — dialogue, ambient sound, and music are part of the generation. This Seedance AI video generator needs no separate audio tools."
+      },
+      "item-2": {
+        "icon": "🌍",
+        "title": "Speak in Six Languages",
+        "description": "Generate Seedance 1.5 videos with accurate lip sync in English, Mandarin, Japanese, Korean, Spanish, and more. Both Seedance text to video and Seedance image to video support multilingual dialogue."
+      },
+      "item-3": {
+        "icon": "🎞️",
+        "title": "First and Last Frame Precision",
+        "description": "Define your scene's start and endpoint with uploaded images. Seedance image to video uses both frames to create controlled, intentional motion that matches your creative direction exactly."
+      },
+      "item-4": {
+        "icon": "⚡",
+        "title": "10x Faster Rendering",
+        "description": "The Dual-Branch Diffusion Transformer in Seedance 1.5 Pro delivers 10x inference acceleration. Spend less time waiting and more time iterating on your Seedance text to video creations."
+      },
+      "item-5": {
+        "icon": "🎬",
+        "title": "Full 1080p at 24fps",
+        "description": "Every Seedance 1.5 generation outputs at 1080p resolution with smooth 24 frames per second playback. The Seedance AI video generator preserves sharp detail and fluid motion in every clip."
+      },
+      "item-6": {
+        "icon": "🔄",
+        "title": "Video Extend for Longer Scenes",
+        "description": "Use the video extend mode in Seedance 1.5 to continue existing clips beyond their original duration. Build longer narratives while the Seedance AI video generator maintains visual and audio consistency."
+      }
+    }
+  },
+  "pricing": {
+    "subtitle": "Seedance 1.5 Pricing",
+    "description": "Start generating Seedance text to video and Seedance image to video clips with free credits. Pick a plan that fits your production volume."
+  },
+  "faqs": {
+    "title": "FAQ",
+    "subtitle": "Seedance 1.5 — Frequently Asked Questions",
+    "items": {
+      "item-1": {
+        "question": "What languages does Seedance 1.5 support for lip sync?",
+        "answer": "Seedance 1.5 supports lip-synced dialogue generation in English, Mandarin Chinese, Japanese, Korean, and Spanish. Both Seedance text to video and Seedance image to video modes produce accurate lip movements matched to each language. You can generate multilingual content without any manual animation work."
+      },
+      "item-2": {
+        "question": "What is the maximum video resolution and duration for Seedance 1.5?",
+        "answer": "Seedance 1.5 Pro generates video at up to 1080p resolution and 24 frames per second. Each generation from this Seedance AI video generator produces clips between 4 and 12 seconds long. You can choose landscape, portrait, or square aspect ratios depending on your intended platform."
+      },
+      "item-3": {
+        "question": "How does first and last frame control work in Seedance image to video?",
+        "answer": "Upload a starting image and optionally a final image to define the endpoints of your video. Seedance 1.5 interpolates the motion between them, preserving character identity and scene composition throughout the transition. Seedance image to video gives you precise control over the arc of movement in your generated clip."
+      },
+      "item-4": {
+        "question": "How does the Seedance AI video generator create audio alongside video?",
+        "answer": "Seedance 1.5 uses audio-video joint generation — sound is created simultaneously with every frame, not added afterward. The Seedance AI video generator produces dialogue with matching lip movements, environmental sound effects timed to on-screen action, and background ambient audio. The result is a complete video with fully synchronized sound."
+      },
+      "item-5": {
+        "question": "Can I extend a Seedance 1.5 video to make it longer?",
+        "answer": "Yes. Seedance 1.5 includes a video extend mode that continues your clip beyond its original duration. The extension maintains visual style, character appearance, and audio consistency from the original generation. You can chain multiple extensions to build longer Seedance text to video or Seedance image to video sequences."
+      },
+      "item-6": {
+        "question": "What is the difference between Seedance text to video and Seedance image to video modes?",
+        "answer": "Seedance text to video creates a video entirely from your written prompt — you describe the scene and the Seedance AI video generator handles all visual decisions. Seedance image to video starts from an uploaded reference image, preserving the characters, style, and composition while adding motion and audio. Both Seedance 1.5 modes produce full 1080p video with synchronized sound."
+      }
+    }
+  }
+}

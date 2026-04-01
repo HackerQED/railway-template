@@ -1,0 +1,117 @@
+{
+  "title": "Seedream 4.5 — 4K AI Image Generator with Text Rendering | yino.ai",
+  "description": "Create 4K AI images with Seedream 4.5. Text to image, multi-image editing, poster design with readable text. Try the Seedream AI image generator free.",
+  "hero": {
+    "title": "Seedream 4.5 — The AI Image Generator That Understands What You Actually Want",
+    "description": "ByteDance's Seedream 4.5 generates production-ready images at up to 4K resolution with pixel-level subject consistency, cinematic lighting, and readable text overlays. Combine multiple reference images into seamless compositions — from marketing posters to product shots to concept art — all from natural language prompts."
+  },
+  "features": {
+    "title": "Where Seedream 4.5 Outperforms Every Other AI Image Generator",
+    "subtitle": "Pixel-perfect consistency, readable text rendering, and spatial intelligence that other models lack.",
+    "items": {
+      "item-1": {
+        "title": "Pixel-Level Subject Consistency Across Multiple Images",
+        "description": "When you combine multiple reference images, Seedream 4.5 extracts and merges people, backgrounds, and objects with pixel-level precision. No more uncanny compositing artifacts or mismatched lighting. Whether you're swapping backgrounds, combining characters, or building 3D-style miniatures, the Seedream AI image generator keeps every detail — skin tones, clothing textures, material surfaces — perfectly unified."
+      },
+      "item-2": {
+        "title": "Complex Prompts Executed Exactly as Described",
+        "description": "Seedream 4.5 follows layered creative instructions that trip up other models. Describe an artistic style like \"elegant black-and-white\" alongside a technical spec like \"4K cinematic quality\" and an abstract effect like \"flowing motion\" — the model executes all three simultaneously. Seedream text to image generation turns complex creative briefs into precise visual output on the first try."
+      },
+      "item-3": {
+        "title": "Readable Text and Professional Layout Composition",
+        "description": "Generate marketing posters, magazine covers, and branded materials with text that humans can actually read. Seedream 4.5 handles headline placement, logo integration, barcode rendering, and multi-element layouts with the precision of a graphic designer. This Seedream AI image generator produces print-ready assets — not images that need text added manually afterward."
+      },
+      "item-4": {
+        "title": "Spatial Logic and Real-World Physics",
+        "description": "Seedream 4.5 understands how the physical world works. Objects occupy correct positions in three-dimensional space with accurate perspective and natural shadow placement. The model handles surreal compositions that still obey physical rules — a model wrapped in oversized yarn maintains correct spatial relationships, architectural interiors show proper depth and proportion."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "How to Generate Images with Seedream 4.5",
+    "subtitle": "From prompt to production-quality image in seconds.",
+    "steps": {
+      "step-1": {
+        "title": "Write Your Prompt or Upload References",
+        "description": "Describe the image you want — include subject, style, mood, lighting, and composition details. For Seedream image editing, upload reference images to maintain character identity, brand style, or scene elements. The more specific your Seedream text to image prompt, the more precisely the output matches your vision."
+      },
+      "step-2": {
+        "title": "Choose Your Format and Quality",
+        "description": "Select an aspect ratio from square to ultrawide — 1:1, 4:3, 3:4, 16:9, 9:16, or 21:9. Choose basic mode for rapid Seedream 4.5 iterations or high quality mode for maximum detail and 4K output. Generate up to 15 images per prompt to explore variations."
+      },
+      "step-3": {
+        "title": "Generate and Download",
+        "description": "Seedream 4.5 produces 2K images in approximately 1.8 seconds. Download the full-resolution output — ready for social media, print materials, product pages, or further editing. Every image from this Seedream AI image generator is cleared for commercial use."
+      }
+    }
+  },
+  "whyChoose": {
+    "title": "Why Seedream 4.5 Is the Go-To for Visual Creators",
+    "items": {
+      "item-1": {
+        "icon": "🎯",
+        "title": "Multi-Image Fusion Without the Composite Look",
+        "description": "Upload a person, a background, and props separately — Seedream 4.5 merges them into a single image that looks like it was photographed, not stitched together. Lighting, color temperature, and shadow direction match across all elements."
+      },
+      "item-2": {
+        "icon": "📝",
+        "title": "Text That's Actually Legible",
+        "description": "Headlines, labels, logos, and even barcodes render clearly in generated images. Seedream 4.5 produces poster and packaging designs where every character is sharp and correctly placed — eliminating the garbled text problem of other models."
+      },
+      "item-3": {
+        "icon": "🎬",
+        "title": "Cinematic Lighting and Atmosphere",
+        "description": "Seedream 4.5 generates images with natural depth, volumetric lighting, and atmospheric effects. Backlit silhouettes, golden hour warmth, neon reflections — the model creates mood through light the way a cinematographer would."
+      },
+      "item-4": {
+        "icon": "🖼️",
+        "title": "Product Photography Without a Studio",
+        "description": "Generate commercial-grade product images by uploading your product photo and describing the scene. Seedream 4.5 places products in lifestyle contexts with accurate shadows, reflections, and environmental lighting — replacing expensive photo shoots."
+      },
+      "item-5": {
+        "icon": "🎨",
+        "title": "Storyboard and Concept Art in Seconds",
+        "description": "Turn script descriptions into visual scenes instantly. Seedream 4.5 maintains character consistency across multiple generations, making it possible to build complete storyboard sequences with unified style and character design."
+      },
+      "item-6": {
+        "icon": "⚡",
+        "title": "2K Output in Under Two Seconds",
+        "description": "Seedream 4.5 generates 2K-resolution images in approximately 1.8 seconds. Rapid Seedream text to image generation means you can iterate on concepts without waiting — test ten variations in the time other models produce one."
+      }
+    }
+  },
+  "pricing": {
+    "subtitle": "Seedream 4.5 Pricing",
+    "description": "Start generating with free credits. Scale with plans designed for individual creators and production teams."
+  },
+  "faqs": {
+    "title": "FAQ",
+    "subtitle": "Seedream 4.5 — Frequently Asked Questions",
+    "items": {
+      "item-1": {
+        "question": "What resolution does Seedream 4.5 support?",
+        "answer": "Seedream 4.5 generates images from 1K up to 4K resolution (4096×4096 pixels maximum). High quality mode produces output suitable for large-format print, billboards, and cinema production. Basic mode delivers 2K images in approximately 1.8 seconds for rapid iteration."
+      },
+      "item-2": {
+        "question": "How does Seedream image editing work with multiple references?",
+        "answer": "Upload multiple reference images and describe how they should combine in your prompt. Seedream 4.5 extracts subjects, backgrounds, and objects at pixel level and merges them into a unified composition. You can specify which elements come from which image — for example, placing a person from image one onto a beach from image two with hot air balloons from image three."
+      },
+      "item-3": {
+        "question": "Can Seedream 4.5 generate images with readable text?",
+        "answer": "Yes. Seedream 4.5 renders text with high precision — headlines, labels, logos, and even complex typographic layouts appear sharp and legible. This makes it effective for poster design, magazine covers, packaging mockups, and branded marketing materials that require text-image harmony."
+      },
+      "item-4": {
+        "question": "What aspect ratios are available for Seedream 4.5?",
+        "answer": "Seedream 4.5 supports a wide range of aspect ratios including 1:1 (square), 4:3, 3:4, 16:9, 9:16, and 21:9 (ultrawide). This covers use cases from Instagram posts and product thumbnails to widescreen banners and cinematic storyboards."
+      },
+      "item-5": {
+        "question": "How fast is Seedream 4.5 compared to other AI image generators?",
+        "answer": "Seedream 4.5 generates 2K-resolution images in approximately 1.8 seconds. This speed comes from its optimized diffusion-transformer architecture, making rapid iteration practical — you can explore dozens of variations in minutes without long generation queues."
+      },
+      "item-6": {
+        "question": "Can I use Seedream 4.5 images commercially?",
+        "answer": "Yes. All images generated through yino.ai with Seedream 4.5 are cleared for commercial use, including marketing materials, product packaging, social media content, publications, and advertising campaigns."
+      }
+    }
+  }
+}

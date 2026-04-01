@@ -1,0 +1,282 @@
+{
+  "metadata": {
+    "title": "AI Generate Tool - MkSaaS",
+    "description": "Generate content in seconds with structured prompts, reusable presets, and export-ready output."
+  },
+  "layoutHint": "Generate tool layout coming next.",
+  "hero": {
+    "introduction": "Introducing Generate",
+    "title": "Generate clean copy, fast",
+    "description": "Turn a short brief into polished output with tone controls and export-ready formatting.",
+    "primary": "Try Generate",
+    "secondary": "See Examples",
+    "tool": {
+      "title": "Generate",
+      "subtitle": "Instant drafts, ready to edit",
+      "status": "Placeholder",
+      "inputLabel": "INPUT",
+      "inputPlaceholder": "Describe your product launch email in 2-3 sentences...",
+      "outputLabel": "OUTPUT",
+      "outputPlaceholder": "Subject: Launching today — the smarter way to plan your week\n\nHi team,\nWe just shipped Generate...",
+      "options": {
+        "tone": "Tone: Professional",
+        "length": "Length: Short",
+        "format": "Format: Email"
+      }
+    }
+  },
+  "logocloud": {
+    "title": "Trusted by teams shipping fast"
+  },
+  "integration": {
+    "title": "Integrations",
+    "subtitle": "Connect Generate with your tools",
+    "description": "Pipe inputs from your stack and send outputs where work happens.",
+    "learnMore": "Learn More",
+    "items": {
+      "item-1": {
+        "title": "Google Gemini",
+        "description": "Draft with best-in-class models and compare outputs."
+      },
+      "item-2": {
+        "title": "Replit",
+        "description": "Generate snippets directly into your editor."
+      },
+      "item-3": {
+        "title": "MagicUI",
+        "description": "Auto-create UI copy that matches your brand."
+      },
+      "item-4": {
+        "title": "VSCodium",
+        "description": "Generate inline content while you build."
+      },
+      "item-5": {
+        "title": "MediaWiki",
+        "description": "Create documentation summaries in one click."
+      },
+      "item-6": {
+        "title": "Google PaLM",
+        "description": "Run tailored prompts for high-signal outputs."
+      }
+    }
+  },
+  "integration2": {
+    "title": "Your content engine, everywhere",
+    "description": "Route drafts into your CRM, docs, or marketing workflows without friction.",
+    "primaryButton": "Get Started",
+    "secondaryButton": "See Demo"
+  },
+  "features": {
+    "title": "Features",
+    "subtitle": "Everything you need to generate",
+    "description": "Structured prompts, reusable presets, and shared team workspaces.",
+    "items": {
+      "item-1": {
+        "title": "Prompt presets",
+        "description": "Save the prompts your team relies on and reuse them instantly."
+      },
+      "item-2": {
+        "title": "Quality controls",
+        "description": "Tune tone, length, and format before every run."
+      },
+      "item-3": {
+        "title": "Team workspaces",
+        "description": "Collaborate with shared templates and review states."
+      },
+      "item-4": {
+        "title": "Export ready",
+        "description": "Copy, download, or push output directly to your tools."
+      }
+    }
+  },
+  "features2": {
+    "title": "Build once, generate forever",
+    "subtitle": "Reusable patterns",
+    "description": "Stop rewriting the same brief. Create a system and scale quality.",
+    "feature-1": "Reusable prompt libraries",
+    "feature-2": "Tone and format controls",
+    "feature-3": "Approval-ready output",
+    "feature-4": "Team access and history"
+  },
+  "features3": {
+    "title": "Built for fast workflows",
+    "subtitle": "Speed + consistency",
+    "description": "Generate at scale without losing your voice.",
+    "items": {
+      "item-1": {
+        "title": "Structured briefs",
+        "description": "Define requirements once and reuse across teams."
+      },
+      "item-2": {
+        "title": "Voice alignment",
+        "description": "Keep outputs consistent with brand guidelines."
+      },
+      "item-3": {
+        "title": "Output history",
+        "description": "Audit what was generated and iterate quickly."
+      },
+      "item-4": {
+        "title": "Collaboration",
+        "description": "Share drafts and capture feedback in context."
+      },
+      "item-5": {
+        "title": "Templates",
+        "description": "Ship consistent content at any scale."
+      },
+      "item-6": {
+        "title": "Exports",
+        "description": "Deliver content to docs, CRM, or pipelines."
+      }
+    }
+  },
+  "seo": {
+    "title": "SEO",
+    "subtitle": "Search-ready content",
+    "description": "Generate drafts that follow SEO best practices and are easy to refine.",
+    "items": [
+      {
+        "title": "Keyword structure",
+        "description": "Align headings and sections with target keywords."
+      },
+      {
+        "title": "Readable output",
+        "description": "Clear formatting that boosts scan-ability and engagement."
+      },
+      {
+        "title": "Metadata ready",
+        "description": "Draft titles and descriptions ready for SERPs."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Pricing",
+    "description": "Choose the plan that works best for you"
+  },
+  "faqs": {
+    "title": "FAQ",
+    "subtitle": "Frequently Asked Questions",
+    "items": {
+      "item-1": {
+        "question": "Do you offer a free trial?",
+        "answer": "Yes, we offer a 7-day free trial."
+      },
+      "item-2": {
+        "question": "How do I cancel my subscription?",
+        "answer": "You can cancel your subscription by visiting the billing page."
+      },
+      "item-3": {
+        "question": "Can I change my plan?",
+        "answer": "Yes, you can change your plan at any time by visiting the billing page."
+      },
+      "item-4": {
+        "question": "What is the refund policy?",
+        "answer": "We offer a 30-day money-back guarantee if you are not happy with our product."
+      },
+      "item-5": {
+        "question": "Can't find what you're looking for?",
+        "answer": "Please contact our customer support team at support@mksaas.com"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "What our customers are saying",
+    "items": {
+      "item-1": {
+        "name": "Jonathan Yombo",
+        "role": "Software Engineer",
+        "image": "https://randomuser.me/api/portraits/men/1.jpg",
+        "quote": "MkSaaS is really extraordinary and very practical, no need to break your head. A real gold mine."
+      },
+      "item-2": {
+        "name": "Yves Kalume",
+        "role": "GDE - Android",
+        "image": "https://randomuser.me/api/portraits/men/6.jpg",
+        "quote": "With no experience in webdesign I just redesigned my entire website in a few minutes with tailwindcss thanks to MkSaaS."
+      },
+      "item-3": {
+        "name": "Yucel Faruksahan",
+        "role": "Tailkits Creator",
+        "image": "https://randomuser.me/api/portraits/men/7.jpg",
+        "quote": "Great work on MkSaaS template. This is one of the best personal website that I have seen so far :)"
+      },
+      "item-4": {
+        "name": "Anonymous author",
+        "role": "Product Manager",
+        "image": "https://randomuser.me/api/portraits/men/8.jpg",
+        "quote": "I downloaded the one of MkSaaS template which is very clear to understand at the start and you could modify the codes/blocks to fit perfectly on your purpose of the page."
+      },
+      "item-5": {
+        "name": "Shekinah Tshiokufila",
+        "role": "Senior Software Engineer",
+        "image": "https://randomuser.me/api/portraits/men/4.jpg",
+        "quote": "MkSaaS is redefining the standard of web design, with these blocks it provides an easy and efficient way for those who love beauty but may lack the time to implement it."
+      },
+      "item-6": {
+        "name": "Oketa Fred",
+        "role": "Fullstack Developer",
+        "image": "https://randomuser.me/api/portraits/men/2.jpg",
+        "quote": "I absolutely love MkSaaS! The component blocks are beautifully designed and easy to use, which makes creating a great-looking website a breeze."
+      },
+      "item-7": {
+        "name": "Zeki",
+        "role": "Founder of ChatExtend",
+        "image": "https://randomuser.me/api/portraits/men/5.jpg",
+        "quote": "MkSaaS is the perfect fusion of simplicity and versatility, enabling us to create UIs that are as stunning as they are user-friendly."
+      },
+      "item-8": {
+        "name": "Joseph Kitheka",
+        "role": "Fullstack Developer",
+        "image": "https://randomuser.me/api/portraits/men/9.jpg",
+        "quote": "MkSaaS has transformed the way I develop web applications. Their extensive collection of UI components, blocks, and templates has significantly accelerated my workflow."
+      },
+      "item-9": {
+        "name": "Khatab Wedaa",
+        "role": "MerakiUI Creator",
+        "image": "https://randomuser.me/api/portraits/men/10.jpg",
+        "quote": "MkSaaS is an elegant, clean, and responsive tailwind css components it's very helpful to start fast with your project."
+      },
+      "item-10": {
+        "name": "Rodrigo Aguilar",
+        "role": "TailwindAwesome Creator",
+        "image": "https://randomuser.me/api/portraits/men/11.jpg",
+        "quote": "I love MkSaaS ❤️. The component blocks are well-structured, simple to use, and beautifully designed. It makes it really easy to have a good-looking website in no time."
+      },
+      "item-11": {
+        "name": "Eric Ampire",
+        "role": "@GoogleDevExpert for Android",
+        "image": "https://randomuser.me/api/portraits/men/12.jpg",
+        "quote": "MkSaaS templates are the perfect solution for anyone who wants to create a beautiful and functional website without any web design experience."
+      },
+      "item-12": {
+        "name": "Roland Tubonge",
+        "role": "Software Engineer",
+        "image": "https://randomuser.me/api/portraits/men/13.jpg",
+        "quote": "MkSaaS is so well designed that even with a very poor knowledge of web design you can do miracles. Let yourself be seduced!"
+      }
+    }
+  },
+  "stats": {
+    "title": "Stats",
+    "subtitle": "Generate in numbers",
+    "description": "Content workflows accelerated by MkSaaS Generate",
+    "items": {
+      "item-1": {
+        "title": "Generated drafts"
+      },
+      "item-2": {
+        "title": "Active teams"
+      },
+      "item-3": {
+        "title": "Templates shipped"
+      }
+    }
+  },
+  "calltoaction": {
+    "title": "Start generating",
+    "description": "Launch your next campaign in minutes.",
+    "primaryButton": "Get Started",
+    "secondaryButton": "See Demo"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "title": "Documentation",
+  "description": "Agent-facing API documentation",
+  "icon": "Zap",
+  "root": true,
+  "pages": ["index"]
+}

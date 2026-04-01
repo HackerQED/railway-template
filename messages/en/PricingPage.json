@@ -1,0 +1,101 @@
+{
+  "title": "Seedance 2.0 Pricing — We Jailbreaked It | yino.ai",
+  "description": "Real Seedance 2.0 from certified partner. Human face, no moderation, no queue, unlimited concurrency. Pay per credit, cancel anytime. Many sites fake it with Veo/Kling.",
+  "subtitle": "Seedance 2.0 Pricing",
+  "certifiedPartnerBadge": "Real Seedance 2.0 from Certified Partner — Many Sites Fake It with Veo / Kling",
+  "subheadline": "We jailbreaked Seedance 2.0 — Human face supported • No queue • Unlimited concurrency",
+  "monthly": "Monthly",
+  "yearly": "Yearly",
+  "payOnce": "Pay Once",
+  "yearlySave": "{percent}% OFF",
+  "whyChoose": {
+    "title": "What Every Seedance 2.0 Plan Includes",
+    "items": {
+      "item-1": {
+        "icon": "👤",
+        "title": "Seedance 2.0 Human Face Generation",
+        "description": "Every plan supports real human face video generation. Upload your portrait, toggle Mark as Real Person, and generate — no content moderation blocking your Seedance 2.0 face uploads."
+      },
+      "item-2": {
+        "icon": "⚡",
+        "title": "No Queue on Any Seedance 2.0 Plan",
+        "description": "Free or paid, your Seedance 2.0 generation starts immediately. No 2-hour queue like official platforms. Seedance 2 videos deliver in 5-8 minutes."
+      },
+      "item-3": {
+        "icon": "♾️",
+        "title": "Unlimited Seedance 2.0 Concurrency",
+        "description": "Submit multiple Seedance 2.0 generations at once. No concurrency limits on any plan — generate as many Seedance 2 videos simultaneously as you need."
+      },
+      "item-4": {
+        "icon": "🔊",
+        "title": "Full Native Audio on Every Generation",
+        "description": "Every Seedance 2.0 video includes native audio — dialogue with lip-sync, music, ambient sound, and effects. No separate audio production needed."
+      },
+      "item-5": {
+        "icon": "🎬",
+        "title": "Native 2K Resolution Output",
+        "description": "Generate Seedance 2.0 video at full 2K resolution (2048×1080). The same output quality as ByteDance's official Seedance 2.0 platform."
+      },
+      "item-6": {
+        "icon": "💰",
+        "title": "Transparent Seedance 2.0 Cost Per Video",
+        "description": "Every Seedance 2.0 generation shows the credit cost before you hit Generate. No hidden fees, no surprise charges. You always know the Seedance 2 price upfront."
+      }
+    }
+  },
+  "faqs": {
+    "title": "FAQ",
+    "subtitle": "Seedance 2.0 Pricing — Frequently Asked Questions",
+    "items": {
+      "item-1": {
+        "question": "How much does one Seedance 2.0 video cost?",
+        "answer": "Seedance 2.0 pricing depends on resolution and duration. A 5-second 480p Seedance 2 video costs approximately 150 credits. A 10-second 720p Seedance 2.0 video costs approximately 600 credits. The exact Seedance 2.0 cost is shown before you generate."
+      },
+      "item-2": {
+        "question": "Is there a free plan for Seedance 2.0?",
+        "answer": "Yes. Sign up and receive free credits — enough for your first Seedance 2.0 generation. Free accounts have the same Seedance 2.0 features: human face support, no queue, and native audio output."
+      },
+      "item-3": {
+        "question": "What is the difference between monthly and annual Seedance 2.0 plans?",
+        "answer": "Annual Seedance 2.0 plans save up to 40% compared to monthly pricing. You receive all credits upfront at the start of the year. If upstream changes affect Seedance 2.0 availability, remaining time is refunded pro-rata."
+      },
+      "item-4": {
+        "question": "How does Seedance 2.0 pricing compare to the official platform?",
+        "answer": "On Dreamina, the official Seedance 2.0 Advanced plan costs approximately $67/month. On yino.ai, Seedance 2.0 pricing starts at $9.90/month with more credits, no queue, and human face support included — features restricted or unavailable on the official Seedance 2.0 platform."
+      },
+      "item-5": {
+        "question": "Can I buy Seedance 2.0 credits without a subscription?",
+        "answer": "Yes. The Credit Pack is a one-time purchase of 20,000 credits with no expiration and no subscription. Use them for Seedance 2.0, Seedance 2, Veo 3.1, Seedream 4.5, or any model on the platform."
+      },
+      "item-6": {
+        "question": "Do credits work across all models or just Seedance 2.0?",
+        "answer": "Credits work across every model on yino.ai — Seedance 2.0, Seedance 1.5, Veo 3.1, and Seedream 4.5. One credit balance, all models. Seedance 2.0 pricing per generation is shown upfront so you can plan your budget."
+      }
+    }
+  },
+  "PricingCard": {
+    "freePrice": "$0",
+    "perMonth": "/month",
+    "perYear": "/year",
+    "popular": "Popular",
+    "currentPlan": "Current Plan",
+    "yourCurrentPlan": "Your Current Plan",
+    "getStartedForFree": "Get Started For Free",
+    "purchaseNow": "Subscribe Now",
+    "buyNow": "Buy Now",
+    "signInToPurchase": "Sign in to purchase",
+    "managePlan": "Manage Plan",
+    "subscribersOnly": "Subscribe to purchase",
+    "notAvailable": "Not Available",
+    "daysTrial": "{days}-day free trial",
+    "billedAnnually": "{amount}/year billed yearly",
+    "yearlySavings": "{percent}% OFF – Save {amount}",
+    "costPer100Credits": "Cost per 100 credits",
+    "whatsIncluded": "What's Included",
+    "yearlyCreditsUpfront": "Get all credits at once with annual fee"
+  },
+  "CheckoutButton": {
+    "loading": "Loading...",
+    "checkoutFailed": "Failed to open checkout page"
+  }
+}
