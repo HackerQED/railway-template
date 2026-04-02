@@ -7,7 +7,7 @@ import { veo31Handler } from './veo-3-1';
 
 /**
  * Handler registry — maps model ID to its handler.
- * To add a new model: create a handler file and register it here.
+ * To add a new model: create a handler file + schema, then register here.
  */
 const handlers: Record<string, ModelHandler> = {
   'seedream-4-5': seedream45Handler,

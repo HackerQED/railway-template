@@ -3,7 +3,10 @@
 import type { ModelConfig } from '@/config/models';
 import { MODELS_MAP, getChannels } from '@/config/models';
 import { creditsKeys } from '@/hooks/use-credits';
-import type { GenerationStatus } from '@/lib/generation-client';
+import type {
+  GenerationInput,
+  GenerationStatus,
+} from '@/lib/generation-client';
 import {
   GenerationApiError,
   fetchGenerationStatus,
@@ -169,7 +172,9 @@ export function GeneratorProvider({
             const errorMsg =
               typeof rawError === 'string'
                 ? rawError
-                : rawError && typeof rawError === 'object' && 'message' in rawError
+                : rawError &&
+                    typeof rawError === 'object' &&
+                    'message' in rawError
                   ? rawError.message
                   : 'Generation failed';
             setError(errorMsg);
@@ -209,32 +214,29 @@ export function GeneratorProvider({
 
     try {
       const currentMode = model.modes.find((m) => m.id === selectedMode);
-      const params: Record<string, unknown> = { prompt: prompt.trim() };
+      const input: Record<string, unknown> = { prompt: prompt.trim() };
 
       for (const p of model.params) {
         if (paramValues[p.id] !== undefined) {
-          params[p.id] = paramValues[p.id];
+          input[p.id] = paramValues[p.id];
         }
       }
 
       if (imageUrls.length > 0) {
         if (selectedMode === 'keyframes') {
-          params.first_frame_url = imageUrls[0];
-          if (imageUrls[1]) params.last_frame_url = imageUrls[1];
+          input.first_frame_url = imageUrls[0];
+          if (imageUrls[1]) input.last_frame_url = imageUrls[1];
         } else if (selectedMode === 'reference') {
-          params.reference_urls = imageUrls;
+          input.reference_urls = imageUrls;
         } else if (
           currentMode?.acceptedMediaTypes &&
           currentMode.acceptedMediaTypes.length > 1
         ) {
-          // Multi-media mode (e.g. Seedance 2.0): images, videos, audio
-          params.media_urls = imageUrls;
+          input.media_urls = imageUrls;
         } else {
-          // Generic fallback (e.g. seedream image editing)
-          params.image_urls = imageUrls;
+          input.image_urls = imageUrls;
         }
 
-        // Pass per-image real-person flags when the mode supports it
         if (currentMode?.showRealPerson) {
           const flags: Record<string, boolean> = {};
           for (const url of imageUrls) {
@@ -243,19 +245,18 @@ export function GeneratorProvider({
             }
           }
           if (Object.keys(flags).length > 0) {
-            params.real_person_flags = flags;
+            input.real_person_flags = flags;
           }
         }
       }
 
-      // Reference mode forces fast
       if (selectedMode === 'reference') {
-        params.model = 'fast';
+        input.model = 'fast';
       }
 
       const { task_id } = await submitGeneration(
         model.id,
-        params as unknown as Parameters<typeof submitGeneration>[1]
+        input as GenerationInput
       );
 
       setTaskId(task_id);
