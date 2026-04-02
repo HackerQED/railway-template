@@ -1,8 +1,7 @@
 import { assetUrl } from '@/lib/assets';
 
 /**
- * Frontend model registry — single source of truth for all consumer-facing
- * model configurations. Linked to backend CAPABILITIES_MAP by API endpoint.
+ * Model registry — single source of truth for all model configurations.
  *
  * To add a new model:
  * 1. Add entry to MODELS array below
@@ -102,7 +101,7 @@ export const MODELS: ModelConfig[] = [
     slug: 'seedream-4-5',
     icon: '/icons/bytedance.png',
     tags: ['Text to Image', 'Image Editing'],
-    endpoint: '/api/agent/models/seedream-4-5',
+    endpoint: '/api/models/seedream-4-5',
     modes: [
       {
         id: 'image-editing',
@@ -156,7 +155,7 @@ export const MODELS: ModelConfig[] = [
     slug: 'seedance-2-0',
     icon: '/icons/bytedance.png',
     tags: ['Text to Video', 'Image to Video', 'Real Person'],
-    endpoint: '/api/agent/models/seedance-2-0-human',
+    endpoint: '/api/models/seedance-2-0-human',
     featured: true,
     modes: [
       {
@@ -228,7 +227,7 @@ export const MODELS: ModelConfig[] = [
     slug: 'seedance-1-5',
     icon: '/icons/bytedance.png',
     tags: ['Text to Video', 'Image to Video', 'Video Extend'],
-    endpoint: '/api/agent/models/seedance-1-5',
+    endpoint: '/api/models/seedance-1-5',
     modes: [
       {
         id: 'text-to-video',
@@ -335,7 +334,7 @@ export const MODELS: ModelConfig[] = [
     slug: 'veo-3-1',
     icon: '/icons/veo.png',
     tags: ['Keyframes', 'Reference', 'Text to Video'],
-    endpoint: '/api/agent/models/veo-3-1',
+    endpoint: '/api/models/veo-3-1',
     modes: [
       {
         id: 'keyframes',

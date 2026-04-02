@@ -78,7 +78,7 @@ export async function fetchGenerationStatus(
   ids: string[]
 ): Promise<GenerationStatus[]> {
   const res = await fetch(
-    `/api/agent/generations/status?ids=${ids.join(',')}`,
+    `/api/generations/status?ids=${ids.join(',')}`,
     { method: 'GET' }
   );
 
@@ -98,7 +98,7 @@ export async function uploadFile(file: File): Promise<string> {
   const formData = new FormData();
   formData.append('file', file);
 
-  const res = await fetch('/api/agent/upload', {
+  const res = await fetch('/api/upload', {
     method: 'POST',
     body: formData,
   });

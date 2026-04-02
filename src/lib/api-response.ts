@@ -2,10 +2,10 @@ import { NextResponse } from 'next/server';
 import { sanitizeErrorMessage } from './sanitize-error';
 
 /**
- * Standard success response. All agent-facing API responses include a `doc` link.
+ * Standard success response.
  */
-export function apiSuccess(data: unknown, doc?: string) {
-  return NextResponse.json({ data, ...(doc ? { doc } : {}) });
+export function apiSuccess(data: unknown) {
+  return NextResponse.json({ data });
 }
 
 /**
@@ -14,13 +14,11 @@ export function apiSuccess(data: unknown, doc?: string) {
 export function apiError(
   message: string,
   status: number,
-  doc?: string,
   extra?: Record<string, unknown>
 ) {
   return NextResponse.json(
     {
       error: sanitizeErrorMessage(message),
-      ...(doc ? { doc } : {}),
       ...extra,
     },
     { status }
@@ -33,15 +31,13 @@ export function apiError(
  */
 export function validateRequired(
   body: Record<string, unknown>,
-  fields: { name: string; type: string; description: string }[],
-  doc: string
+  fields: { name: string; type: string; description: string }[]
 ): NextResponse | null {
   for (const field of fields) {
     if (body[field.name] === undefined || body[field.name] === null) {
       return apiError(
         `missing required field '${field.name}' (${field.type}, ${field.description})`,
-        400,
-        doc
+        400
       );
     }
   }
@@ -49,12 +45,11 @@ export function validateRequired(
 }
 
 /**
- * Unauthorized response for agent API endpoints.
+ * Unauthorized response.
  */
-export function apiUnauthorized(doc?: string) {
+export function apiUnauthorized() {
   return apiError(
     'Authentication required. Use Authorization: Bearer <api-key> header or session cookie.',
-    401,
-    doc || '/api/agent/capabilities'
+    401
   );
 }
