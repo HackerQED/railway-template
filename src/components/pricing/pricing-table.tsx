@@ -233,7 +233,9 @@ export function PricingTable({
               )}
             </ToggleGroup>
           </div>
-          <p className="text-sm text-muted-foreground">Pay per credit • Cancel anytime</p>
+          <p className="text-sm text-muted-foreground">
+            Pay per credit • Cancel anytime
+          </p>
         </div>
       )}
 

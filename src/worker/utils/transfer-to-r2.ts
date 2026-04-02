@@ -60,7 +60,12 @@ export async function transferToR2(
   }
 
   const filename = `${nanoid()}.${ext}`;
-  const result = await uploadFile(buffer, filename, mimeType, FOLDERS.GENERATION);
+  const result = await uploadFile(
+    buffer,
+    filename,
+    mimeType,
+    FOLDERS.GENERATION
+  );
   return result.url;
 }
 

@@ -2,11 +2,11 @@
 
 import { GoogleLoginButton } from '@/components/auth/google-login-button';
 import Container from '@/components/layout/container';
+import { CreditsBalanceButton } from '@/components/layout/credits-balance-button';
 import { Logo } from '@/components/layout/logo';
 import { ModeSwitcher } from '@/components/layout/mode-switcher';
 import { NavbarMobile } from '@/components/layout/navbar-mobile';
 import { UserButton } from '@/components/layout/user-button';
-import { CreditsBalanceButton } from '@/components/layout/credits-balance-button';
 import { buttonVariants } from '@/components/ui/button';
 import {
   NavigationMenu,

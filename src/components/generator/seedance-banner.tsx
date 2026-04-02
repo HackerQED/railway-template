@@ -25,9 +25,8 @@ export function SeedanceBanner() {
             >
               Seedance 1.5
             </LocaleLink>{' '}
-            offers{' '}
-            <strong className="text-foreground">no moderation</strong>, lower
-            price, and faster generation.
+            offers <strong className="text-foreground">no moderation</strong>,
+            lower price, and faster generation.
           </li>
         </ul>
       </div>

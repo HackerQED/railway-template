@@ -1,7 +1,32 @@
 /**
  * Frontend API client for generation endpoints.
  * Uses same-origin fetch with session cookie auth.
+ *
+ * Input types are inferred from Zod schemas in handlers/schemas/.
  */
+
+import type { Seedance15Input } from '@/app/api/generate/handlers/schemas/seedance-1-5';
+import type { Seedance20Input } from '@/app/api/generate/handlers/schemas/seedance-2-0';
+import type { Seedance20HumanInput } from '@/app/api/generate/handlers/schemas/seedance-2-0-human';
+import type { Seedream45Input } from '@/app/api/generate/handlers/schemas/seedream-4-5';
+import type { Veo31Input } from '@/app/api/generate/handlers/schemas/veo-3-1';
+
+/** Union of all model input types */
+export type GenerationInput =
+  | Seedream45Input
+  | Seedance15Input
+  | Seedance20Input
+  | Seedance20HumanInput
+  | Veo31Input;
+
+/** Map model ID → its typed input */
+export interface ModelInputMap {
+  'seedream-4-5': Seedream45Input;
+  'seedance-1-5': Seedance15Input;
+  'seedance-2-0': Seedance20Input;
+  'seedance-2-0-human': Seedance20HumanInput;
+  'veo-3-1': Veo31Input;
+}
 
 export class GenerationApiError extends Error {
   status: number;
@@ -10,25 +35,6 @@ export class GenerationApiError extends Error {
     this.name = 'GenerationApiError';
     this.status = status;
   }
-}
-
-export interface GenerationSubmitParams {
-  prompt: string;
-  aspect_ratio?: string;
-  quality?: string;
-  model?: string;
-  /** Keyframes mode: first frame URL */
-  first_frame_url?: string;
-  /** Keyframes mode: last frame URL (optional) */
-  last_frame_url?: string;
-  /** Reference mode: 1-3 reference image URLs */
-  reference_urls?: string[];
-  /** Seedream image editing: input images */
-  image_urls?: string[];
-  /** Seedance multi-media: images, videos, and audio URLs */
-  media_urls?: string[];
-  seed?: number;
-  [key: string]: unknown;
 }
 
 export interface GenerationSubmitResult {
@@ -49,16 +55,18 @@ export interface GenerationStatus {
 
 /**
  * Submit a generation request to the unified /api/generate endpoint.
- * The model ID is included in the request body.
+ * When modelId is a known key, input is type-checked against that model's schema.
  */
-export async function submitGeneration(
-  modelId: string,
-  params: GenerationSubmitParams
+export async function submitGeneration<K extends string>(
+  modelId: K,
+  input: K extends keyof ModelInputMap
+    ? ModelInputMap[K]
+    : Record<string, unknown>
 ): Promise<GenerationSubmitResult> {
   const res = await fetch('/api/generate', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ model: modelId, ...params }),
+    body: JSON.stringify({ model: modelId, input }),
   });
 
   const data = await res.json();
@@ -79,10 +87,9 @@ export async function submitGeneration(
 export async function fetchGenerationStatus(
   ids: string[]
 ): Promise<GenerationStatus[]> {
-  const res = await fetch(
-    `/api/generations/status?ids=${ids.join(',')}`,
-    { method: 'GET' }
-  );
+  const res = await fetch(`/api/generations/status?ids=${ids.join(',')}`, {
+    method: 'GET',
+  });
 
   const data = await res.json();
 
