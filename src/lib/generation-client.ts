@@ -28,6 +28,7 @@ export interface GenerationSubmitParams {
   /** Seedance multi-media: images, videos, and audio URLs */
   media_urls?: string[];
   seed?: number;
+  [key: string]: unknown;
 }
 
 export interface GenerationSubmitResult {
@@ -47,16 +48,17 @@ export interface GenerationStatus {
 }
 
 /**
- * Submit a generation request to a model endpoint.
+ * Submit a generation request to the unified /api/generate endpoint.
+ * The model ID is included in the request body.
  */
 export async function submitGeneration(
-  endpoint: string,
+  modelId: string,
   params: GenerationSubmitParams
 ): Promise<GenerationSubmitResult> {
-  const res = await fetch(endpoint, {
+  const res = await fetch('/api/generate', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(params),
+    body: JSON.stringify({ model: modelId, ...params }),
   });
 
   const data = await res.json();

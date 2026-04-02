@@ -66,8 +66,6 @@ export type ModelConfig = {
   icon: string;
   /** Tags displayed as badges */
   tags: string[];
-  /** API endpoint path */
-  endpoint: string;
   /** Generation modes this model supports */
   modes: GenerationMode[];
   /** Model-specific parameters */
@@ -101,7 +99,6 @@ export const MODELS: ModelConfig[] = [
     slug: 'seedream-4-5',
     icon: '/icons/bytedance.png',
     tags: ['Text to Image', 'Image Editing'],
-    endpoint: '/api/models/seedream-4-5',
     modes: [
       {
         id: 'image-editing',
@@ -155,7 +152,6 @@ export const MODELS: ModelConfig[] = [
     slug: 'seedance-2-0',
     icon: '/icons/bytedance.png',
     tags: ['Text to Video', 'Image to Video', 'Real Person'],
-    endpoint: '/api/models/seedance-2-0-human',
     featured: true,
     modes: [
       {
@@ -227,7 +223,6 @@ export const MODELS: ModelConfig[] = [
     slug: 'seedance-1-5',
     icon: '/icons/bytedance.png',
     tags: ['Text to Video', 'Image to Video', 'Video Extend'],
-    endpoint: '/api/models/seedance-1-5',
     modes: [
       {
         id: 'text-to-video',
@@ -334,7 +329,6 @@ export const MODELS: ModelConfig[] = [
     slug: 'veo-3-1',
     icon: '/icons/veo.png',
     tags: ['Keyframes', 'Reference', 'Text to Video'],
-    endpoint: '/api/models/veo-3-1',
     modes: [
       {
         id: 'keyframes',

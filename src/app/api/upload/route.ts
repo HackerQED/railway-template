@@ -20,8 +20,7 @@ export async function POST(request: NextRequest) {
   if (!formData) {
     return apiError(
       'Expected multipart/form-data with a "file" field',
-      400,
-      DOC
+      400
     );
   }
 
@@ -37,8 +36,7 @@ export async function POST(request: NextRequest) {
   if (!isImage && !isAudio && !isVideo) {
     return apiError(
       `Unsupported file type: ${file.type}. Supported: ${[...SUPPORTED_IMAGE_TYPES, ...ALLOWED_VIDEO_TYPES, ...ALLOWED_AUDIO_TYPES].join(', ')}`,
-      400,
-      DOC
+      400
     );
   }
 
