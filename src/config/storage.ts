@@ -11,7 +11,7 @@
 
 /**
  * Public base URL for all stored files (R2/S3).
- * Set via STORAGE_PUBLIC_URL env var, e.g. "https://assets1.onesite.dev"
+ * Set via NEXT_PUBLIC_STORAGE_PUBLIC_URL env var, e.g. "https://assets1.onesite.dev"
  *
  * Used for:
  * - Generated results (images/videos)
@@ -19,7 +19,7 @@
  * - Static sample media
  */
 export const STORAGE_PUBLIC_URL =
-  process.env.STORAGE_PUBLIC_URL ?? '';
+  process.env.NEXT_PUBLIC_STORAGE_PUBLIC_URL ?? '';
 
 // ---------------------------------------------------------------------------
 // Folder prefixes — every storage path is defined here
