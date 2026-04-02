@@ -47,7 +47,6 @@ interface ItemInput {
   /** Use fast model variant */
   fast?: boolean;
   comment?: string;
-  project_id?: string;
 }
 
 /** Coerce string values from frontend toggles/inputs to proper types */
@@ -151,7 +150,6 @@ async function submitOne(
         ...(item.duration !== undefined ? { duration: item.duration } : {}),
         ...(item.fast ? { fast: true } : {}),
       },
-      projectId: item.project_id || null,
       comment: item.comment || null,
       sortOrder: index,
       createdAt: new Date(),
@@ -236,7 +234,6 @@ export async function POST(request: NextRequest) {
     duration: body.duration as number | undefined,
     fast: body.fast as boolean | undefined,
     comment: body.comment as string | undefined,
-    project_id: body.project_id as string | undefined,
   });
 
   const err = validateItem(item, '');

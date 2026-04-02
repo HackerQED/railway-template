@@ -47,7 +47,6 @@ export async function GET(request: NextRequest) {
       output: generation.output,
       error: generation.error,
       comment: generation.comment,
-      projectId: generation.projectId,
       createdAt: generation.createdAt,
       completedAt: generation.completedAt,
     })

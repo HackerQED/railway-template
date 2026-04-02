@@ -15,7 +15,4 @@ export default defineConfig({
   dbCredentials: {
     url: process.env.DATABASE_URL!,
   },
-  // LangGraph checkpointer creates its own tables at runtime;
-  // exclude them so drizzle-kit doesn't try to drop them.
-  tablesFilter: ['!checkpoint*'],
 });

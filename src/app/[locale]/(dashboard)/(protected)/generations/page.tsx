@@ -30,7 +30,6 @@ export default async function GenerationsPage() {
       output: generation.output,
       error: generation.error,
       comment: generation.comment,
-      projectId: generation.projectId,
       createdAt: generation.createdAt,
       completedAt: generation.completedAt,
     })

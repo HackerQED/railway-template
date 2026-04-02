@@ -33,18 +33,8 @@ export async function PATCH(
     updates.comment = body.comment ?? null;
   }
 
-  if ('project_id' in body) {
-    if (body.project_id !== null && typeof body.project_id !== 'string') {
-      return apiError("'project_id' must be a string or null", 400);
-    }
-    updates.projectId = body.project_id ?? null;
-  }
-
   if (Object.keys(updates).length === 0) {
-    return apiError(
-      'No valid fields to update. Supported: comment, project_id',
-      400
-    );
+    return apiError('No valid fields to update. Supported: comment', 400);
   }
 
   updates.updatedAt = new Date();
@@ -57,7 +47,6 @@ export async function PATCH(
     .returning({
       id: generation.id,
       comment: generation.comment,
-      projectId: generation.projectId,
       updatedAt: generation.updatedAt,
     });
 

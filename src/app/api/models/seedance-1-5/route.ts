@@ -50,7 +50,6 @@ interface ItemInput {
   /** Use fast model variant */
   fast?: boolean;
   comment?: string;
-  project_id?: string;
 }
 
 function normalizeItem(item: ItemInput): ItemInput {
@@ -202,7 +201,6 @@ async function submitOne(
         ...(item.seed !== undefined ? { seed: item.seed } : {}),
         ...(item.fast ? { fast: true } : {}),
       },
-      projectId: item.project_id || null,
       comment: item.comment || null,
       sortOrder: index,
       createdAt: new Date(),
@@ -289,7 +287,6 @@ export async function POST(request: NextRequest) {
     seed: body.seed as number | undefined,
     fast: body.fast as boolean | undefined,
     comment: body.comment as string | undefined,
-    project_id: body.project_id as string | undefined,
   });
 
   const err = validateItem(item, '');

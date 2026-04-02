@@ -51,7 +51,6 @@ CREATE TABLE "generation" (
 	"output" jsonb,
 	"error" jsonb,
 	"inner_provider_cost" numeric,
-	"project_id" text,
 	"comment" text,
 	"sort_order" integer,
 	"started_at" timestamp,
@@ -78,28 +77,10 @@ CREATE TABLE "payment" (
 	"cancel_at_period_end" boolean,
 	"trial_start" timestamp,
 	"trial_end" timestamp,
+	"metadata" jsonb,
 	"created_at" timestamp DEFAULT now() NOT NULL,
 	"updated_at" timestamp DEFAULT now() NOT NULL,
 	CONSTRAINT "payment_invoice_id_unique" UNIQUE("invoice_id")
-);
---> statement-breakpoint
-CREATE TABLE "preview" (
-	"id" text PRIMARY KEY NOT NULL,
-	"project_id" text NOT NULL,
-	"blocks" jsonb NOT NULL,
-	"created_at" timestamp DEFAULT now() NOT NULL,
-	"updated_at" timestamp DEFAULT now() NOT NULL,
-	CONSTRAINT "preview_project_id_unique" UNIQUE("project_id")
-);
---> statement-breakpoint
-CREATE TABLE "project" (
-	"id" text PRIMARY KEY NOT NULL,
-	"user_id" text NOT NULL,
-	"title" text NOT NULL,
-	"status" text DEFAULT 'active' NOT NULL,
-	"metadata" jsonb,
-	"created_at" timestamp DEFAULT now() NOT NULL,
-	"updated_at" timestamp DEFAULT now() NOT NULL
 );
 --> statement-breakpoint
 CREATE TABLE "session" (
@@ -133,6 +114,24 @@ CREATE TABLE "user" (
 	CONSTRAINT "user_normalized_email_unique" UNIQUE("normalized_email")
 );
 --> statement-breakpoint
+CREATE TABLE "user_conversion" (
+	"id" text PRIMARY KEY NOT NULL,
+	"user_id" text NOT NULL,
+	"sign_up_at" timestamp,
+	"purchase_at" timestamp,
+	"purchase_amount_cents" integer DEFAULT 0 NOT NULL,
+	"gclid" text,
+	"utm_source" text,
+	"utm_campaign" text,
+	"referrer" text,
+	"landing_page" text,
+	"pending_purchase_reports" jsonb,
+	"metadata" jsonb,
+	"created_at" timestamp DEFAULT now() NOT NULL,
+	"updated_at" timestamp DEFAULT now() NOT NULL,
+	CONSTRAINT "user_conversion_user_id_unique" UNIQUE("user_id")
+);
+--> statement-breakpoint
 CREATE TABLE "user_credit" (
 	"id" text PRIMARY KEY NOT NULL,
 	"user_id" text NOT NULL,
@@ -157,11 +156,9 @@ ALTER TABLE "api_key" ADD CONSTRAINT "api_key_user_id_user_id_fk" FOREIGN KEY ("
 ALTER TABLE "credit_transaction" ADD CONSTRAINT "credit_transaction_user_id_user_id_fk" FOREIGN KEY ("user_id") REFERENCES "public"."user"("id") ON DELETE cascade ON UPDATE no action;--> statement-breakpoint
 ALTER TABLE "credit_transaction" ADD CONSTRAINT "credit_transaction_generation_id_generation_id_fk" FOREIGN KEY ("generation_id") REFERENCES "public"."generation"("id") ON DELETE set null ON UPDATE no action;--> statement-breakpoint
 ALTER TABLE "generation" ADD CONSTRAINT "generation_user_id_user_id_fk" FOREIGN KEY ("user_id") REFERENCES "public"."user"("id") ON DELETE cascade ON UPDATE no action;--> statement-breakpoint
-ALTER TABLE "generation" ADD CONSTRAINT "generation_project_id_project_id_fk" FOREIGN KEY ("project_id") REFERENCES "public"."project"("id") ON DELETE set null ON UPDATE no action;--> statement-breakpoint
 ALTER TABLE "payment" ADD CONSTRAINT "payment_user_id_user_id_fk" FOREIGN KEY ("user_id") REFERENCES "public"."user"("id") ON DELETE cascade ON UPDATE no action;--> statement-breakpoint
-ALTER TABLE "preview" ADD CONSTRAINT "preview_project_id_project_id_fk" FOREIGN KEY ("project_id") REFERENCES "public"."project"("id") ON DELETE cascade ON UPDATE no action;--> statement-breakpoint
-ALTER TABLE "project" ADD CONSTRAINT "project_user_id_user_id_fk" FOREIGN KEY ("user_id") REFERENCES "public"."user"("id") ON DELETE cascade ON UPDATE no action;--> statement-breakpoint
 ALTER TABLE "session" ADD CONSTRAINT "session_user_id_user_id_fk" FOREIGN KEY ("user_id") REFERENCES "public"."user"("id") ON DELETE cascade ON UPDATE no action;--> statement-breakpoint
+ALTER TABLE "user_conversion" ADD CONSTRAINT "user_conversion_user_id_user_id_fk" FOREIGN KEY ("user_id") REFERENCES "public"."user"("id") ON DELETE cascade ON UPDATE no action;--> statement-breakpoint
 ALTER TABLE "user_credit" ADD CONSTRAINT "user_credit_user_id_user_id_fk" FOREIGN KEY ("user_id") REFERENCES "public"."user"("id") ON DELETE cascade ON UPDATE no action;--> statement-breakpoint
 CREATE INDEX "account_user_id_idx" ON "account" USING btree ("user_id");--> statement-breakpoint
 CREATE INDEX "account_account_id_idx" ON "account" USING btree ("account_id");--> statement-breakpoint
@@ -176,7 +173,6 @@ CREATE INDEX "generation_type_idx" ON "generation" USING btree ("type");--> stat
 CREATE INDEX "generation_generator_id_idx" ON "generation" USING btree ("generator_id");--> statement-breakpoint
 CREATE INDEX "generation_inner_provider_idx" ON "generation" USING btree ("inner_provider");--> statement-breakpoint
 CREATE INDEX "generation_status_idx" ON "generation" USING btree ("status");--> statement-breakpoint
-CREATE INDEX "generation_project_id_idx" ON "generation" USING btree ("project_id");--> statement-breakpoint
 CREATE INDEX "generation_created_at_idx" ON "generation" USING btree ("created_at");--> statement-breakpoint
 CREATE INDEX "payment_type_idx" ON "payment" USING btree ("type");--> statement-breakpoint
 CREATE INDEX "payment_scene_idx" ON "payment" USING btree ("scene");--> statement-breakpoint
@@ -188,12 +184,15 @@ CREATE INDEX "payment_paid_idx" ON "payment" USING btree ("paid");--> statement-
 CREATE INDEX "payment_subscription_id_idx" ON "payment" USING btree ("subscription_id");--> statement-breakpoint
 CREATE INDEX "payment_session_id_idx" ON "payment" USING btree ("session_id");--> statement-breakpoint
 CREATE INDEX "payment_invoice_id_idx" ON "payment" USING btree ("invoice_id");--> statement-breakpoint
-CREATE INDEX "preview_project_id_idx" ON "preview" USING btree ("project_id");--> statement-breakpoint
-CREATE INDEX "project_user_id_idx" ON "project" USING btree ("user_id");--> statement-breakpoint
-CREATE INDEX "project_status_idx" ON "project" USING btree ("status");--> statement-breakpoint
 CREATE INDEX "session_token_idx" ON "session" USING btree ("token");--> statement-breakpoint
 CREATE INDEX "session_user_id_idx" ON "session" USING btree ("user_id");--> statement-breakpoint
 CREATE INDEX "user_id_idx" ON "user" USING btree ("id");--> statement-breakpoint
 CREATE INDEX "user_customer_id_idx" ON "user" USING btree ("customer_id");--> statement-breakpoint
 CREATE INDEX "user_role_idx" ON "user" USING btree ("role");--> statement-breakpoint
+CREATE INDEX "user_conversion_user_id_idx" ON "user_conversion" USING btree ("user_id");--> statement-breakpoint
+CREATE INDEX "user_conversion_sign_up_at_idx" ON "user_conversion" USING btree ("sign_up_at");--> statement-breakpoint
+CREATE INDEX "user_conversion_purchase_at_idx" ON "user_conversion" USING btree ("purchase_at");--> statement-breakpoint
+CREATE INDEX "user_conversion_gclid_idx" ON "user_conversion" USING btree ("gclid");--> statement-breakpoint
+CREATE INDEX "user_conversion_utm_source_idx" ON "user_conversion" USING btree ("utm_source");--> statement-breakpoint
+CREATE INDEX "user_conversion_landing_page_idx" ON "user_conversion" USING btree ("landing_page");--> statement-breakpoint
 CREATE INDEX "user_credit_user_id_idx" ON "user_credit" USING btree ("user_id");

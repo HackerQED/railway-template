@@ -51,7 +51,6 @@ interface ItemInput {
   /** Per-URL real-person flags: { "url": true } */
   real_person_flags?: Record<string, boolean>;
   comment?: string;
-  project_id?: string;
 }
 
 function normalizeItem(item: ItemInput): ItemInput {
@@ -200,7 +199,6 @@ async function submitOne(
           ? { real_person_flags: item.real_person_flags }
           : {}),
       },
-      projectId: item.project_id || null,
       comment: item.comment || null,
       sortOrder: index,
       createdAt: new Date(),
@@ -290,7 +288,6 @@ export async function POST(request: NextRequest) {
       | Record<string, boolean>
       | undefined,
     comment: body.comment as string | undefined,
-    project_id: body.project_id as string | undefined,
   });
 
   const err = validateItem(item, '');

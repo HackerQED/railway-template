@@ -32,7 +32,6 @@ export interface GenerationDetail {
   output: { url?: string; urls?: string[]; [key: string]: unknown } | null;
   error: { code?: string; message?: string } | null;
   comment: string | null;
-  projectId: string | null;
   createdAt: string;
   completedAt: string | null;
 }
@@ -272,21 +271,6 @@ export function GenerationDetailSheet({
               <p className="text-sm text-destructive/80">
                 {error.message || 'Unknown error'}
               </p>
-            </div>
-          )}
-
-          {/* Project link */}
-          {gen.projectId && (
-            <div className="text-sm">
-              <span className="text-muted-foreground">Project: </span>
-              <a
-                href={`/projects/${gen.projectId}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:underline"
-              >
-                View project →
-              </a>
             </div>
           )}
 

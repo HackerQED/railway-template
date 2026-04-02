@@ -31,7 +31,6 @@ interface ItemInput {
   model?: string;
   seed?: number;
   comment?: string;
-  project_id?: string;
 }
 
 async function submitOne(
@@ -93,7 +92,6 @@ async function submitOne(
           : {}),
         ...(item.seed !== undefined ? { seed: item.seed } : {}),
       },
-      projectId: item.project_id || null,
       comment: item.comment || null,
       sortOrder: index,
       createdAt: new Date(),
@@ -221,7 +219,6 @@ export async function POST(request: NextRequest) {
     model: body.model as string | undefined,
     seed: body.seed as number | undefined,
     comment: body.comment as string | undefined,
-    project_id: body.project_id as string | undefined,
   };
 
   const err = validateItem(item, '');

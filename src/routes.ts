@@ -30,8 +30,6 @@ export enum Routes {
   // Legacy routes (kept for reference)
   ToolsGenerate = '/generate',
 
-  Projects = '/projects',
-
   SettingsCredits = '/settings/credits',
   SettingsApiKeys = '/settings/api-keys',
 

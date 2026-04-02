@@ -30,7 +30,6 @@ interface ItemInput {
   aspect_ratio?: string;
   quality?: string;
   comment?: string;
-  project_id?: string;
 }
 
 function resolveModel(item: ItemInput): string {
@@ -88,7 +87,6 @@ async function submitOne(
         quality,
         ...(item.image_urls?.length ? { image_urls: item.image_urls } : {}),
       },
-      projectId: item.project_id || null,
       comment: item.comment || null,
       sortOrder: index,
       createdAt: new Date(),
@@ -188,7 +186,6 @@ export async function POST(request: NextRequest) {
     quality: body.quality as string | undefined,
     image_urls: body.image_urls as string[] | undefined,
     comment: body.comment as string | undefined,
-    project_id: body.project_id as string | undefined,
   };
 
   const err = validateItem(item, '');
