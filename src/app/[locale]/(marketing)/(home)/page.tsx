@@ -8,7 +8,7 @@ import PricingSection from '@/components/blocks/pricing/pricing';
 import WhyChooseSection from '@/components/blocks/why-choose/why-choose';
 import { HomeGenerator } from '@/components/home-generator';
 import CrispChat from '@/components/layout/crisp-chat';
-import { assetUrl } from '@/lib/assets';
+import { storageUrl } from '@/config/storage';
 import { constructMetadata } from '@/lib/metadata';
 import type { Metadata } from 'next';
 import type { Locale } from 'next-intl';
@@ -53,11 +53,11 @@ export default async function HomePage(props: HomePageProps) {
           content={t.raw('features')}
           media={{
             'item-1': {
-              video: assetUrl('/sample/seedance-2-1.mp4'),
+              video: storageUrl('/sample/seedance-2-1.mp4'),
             },
-            'item-2': { video: assetUrl('/sample/seedance-2-2.mp4') },
+            'item-2': { video: storageUrl('/sample/seedance-2-2.mp4') },
             'item-3': {
-              video: assetUrl('/sample/seedance-2-3.mp4'),
+              video: storageUrl('/sample/seedance-2-3.mp4'),
             },
           }}
         />

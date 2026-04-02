@@ -1,3 +1,4 @@
+import { FOLDERS } from '@/config/storage';
 import { resolveApiUser } from '@/lib/api-auth';
 import { apiError, apiSuccess, apiUnauthorized } from '@/lib/api-response';
 import {
@@ -46,7 +47,7 @@ export async function POST(request: NextRequest) {
 
   try {
     const buffer = Buffer.from(await file.arrayBuffer());
-    const result = await uploadFile(buffer, file.name, file.type, 'uploads');
+    const result = await uploadFile(buffer, file.name, file.type, FOLDERS.UPLOADS);
     return apiSuccess(result);
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err);

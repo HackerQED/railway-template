@@ -1,4 +1,4 @@
-import { assetUrl } from '@/lib/assets';
+import { storageUrl } from '@/config/storage';
 
 /**
  * Model registry — single source of truth for all model configurations.
@@ -141,7 +141,7 @@ export const MODELS: ModelConfig[] = [
       },
     ],
     creditCost: 10,
-    sampleMedia: assetUrl('/sample/seedream4.5-1.png'),
+    sampleMedia: storageUrl('/sample/seedream4.5-1.png'),
   },
   {
     id: 'seedance-2-0-human',
@@ -211,7 +211,7 @@ export const MODELS: ModelConfig[] = [
       if (omni) cost *= 2;
       return cost;
     },
-    sampleMedia: assetUrl('/sample/seedance-2-2.mp4'),
+    sampleMedia: storageUrl('/sample/seedance-2-2.mp4'),
     estimatedTime: '8–10 min',
   },
   {
@@ -318,7 +318,7 @@ export const MODELS: ModelConfig[] = [
       if (p.generate_audio === 'false') cost = Math.round(cost / 2);
       return cost;
     },
-    sampleMedia: assetUrl('/sample/seedance-1.5-1.mp4'),
+    sampleMedia: storageUrl('/sample/seedance-1.5-1.mp4'),
   },
   {
     id: 'veo-3-1',
@@ -374,7 +374,7 @@ export const MODELS: ModelConfig[] = [
     ],
     creditCost: 30,
     resolveCost: (p) => (p.model === 'standard' ? 200 : 30),
-    sampleMedia: assetUrl('/sample/veo3.1-1.mp4'),
+    sampleMedia: storageUrl('/sample/veo3.1-1.mp4'),
   },
 ];
 

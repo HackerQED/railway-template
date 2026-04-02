@@ -1,4 +1,4 @@
-import { ASSETS_BASE_URL } from '@/lib/assets';
+import { FOLDERS, STORAGE_PUBLIC_URL } from '@/config/storage';
 import { isMocked } from '@/lib/mock';
 import { nanoid } from 'nanoid';
 import type { PollResult, ProviderAdapter, SubmitInput } from '../types';
@@ -109,7 +109,7 @@ export const maxapiAdapter: ProviderAdapter = {
         status: 'done',
         output: {
           urls: [
-            `${ASSETS_BASE_URL}/generation/36586848-d873-48ca-a811-c4eb2926ed83.mp4`,
+            `${STORAGE_PUBLIC_URL}/${FOLDERS.GENERATION}/36586848-d873-48ca-a811-c4eb2926ed83.mp4`,
           ],
         },
       };

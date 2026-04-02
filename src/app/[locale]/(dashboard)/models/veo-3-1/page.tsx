@@ -13,7 +13,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb';
-import { assetUrl } from '@/lib/assets';
+import { storageUrl } from '@/config/storage';
 import { constructMetadata } from '@/lib/metadata';
 import type { Metadata } from 'next';
 import type { Locale } from 'next-intl';
@@ -63,10 +63,10 @@ export default async function VeoPage() {
       <FeaturesShowcase
         content={t.raw('features')}
         media={{
-          'item-1': { video: assetUrl('/sample/veo3.1-1.mp4') },
-          'item-2': { video: assetUrl('/sample/veo3.1-2.mp4') },
-          'item-3': { video: assetUrl('/sample/veo3.1-3.mp4') },
-          'item-4': { video: assetUrl('/sample/veo3.1-4.mp4') },
+          'item-1': { video: storageUrl('/sample/veo3.1-1.mp4') },
+          'item-2': { video: storageUrl('/sample/veo3.1-2.mp4') },
+          'item-3': { video: storageUrl('/sample/veo3.1-3.mp4') },
+          'item-4': { video: storageUrl('/sample/veo3.1-4.mp4') },
         }}
       />
 
