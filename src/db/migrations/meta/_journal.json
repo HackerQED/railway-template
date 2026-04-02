@@ -5,15 +5,8 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1774596340084,
-      "tag": "0000_icy_calypso",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "7",
-      "when": 1774686765465,
-      "tag": "0001_add-user-conversion-and-payment-metadata",
+      "when": 1775089260336,
+      "tag": "0000_green_mole_man",
       "breakpoints": true
     }
   ]

@@ -2,7 +2,7 @@ import { PaymentCard } from '@/components/payment/payment-card';
 import { constructMetadata } from '@/lib/metadata';
 
 export const metadata = constructMetadata({
-  title: 'Payment - yino.ai',
+  title: 'Payment - Railway Template',
   description: 'Complete your payment.',
   noIndex: true,
 });

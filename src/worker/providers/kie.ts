@@ -1,4 +1,4 @@
-import { ASSETS_BASE_URL } from '@/lib/assets';
+import { FOLDERS, STORAGE_PUBLIC_URL } from '@/config/storage';
 import { isMocked } from '@/lib/mock';
 import { nanoid } from 'nanoid';
 import type { PollResult, ProviderAdapter, SubmitInput } from '../types';
@@ -85,7 +85,7 @@ export const kieAdapter: ProviderAdapter = {
         status: 'done',
         output: {
           urls: [
-            `${ASSETS_BASE_URL}/generation/64f77beb-d1db-442b-98ae-49b2940bb115.jpg`,
+            `${STORAGE_PUBLIC_URL}/${FOLDERS.GENERATION}/64f77beb-d1db-442b-98ae-49b2940bb115.jpg`,
           ],
         },
       };

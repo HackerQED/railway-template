@@ -13,7 +13,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb';
-import { assetUrl } from '@/lib/assets';
+import { storageUrl } from '@/config/storage';
 import { constructMetadata } from '@/lib/metadata';
 import type { Metadata } from 'next';
 import type { Locale } from 'next-intl';
@@ -64,16 +64,16 @@ export default async function Seedance15Page() {
         content={t.raw('features')}
         media={{
           'item-1': {
-            video: assetUrl('/sample/seedance-1.5-1.mp4'),
+            video: storageUrl('/sample/seedance-1.5-1.mp4'),
           },
           'item-2': {
-            video: assetUrl('/sample/seedance-1.5-2.mp4'),
+            video: storageUrl('/sample/seedance-1.5-2.mp4'),
           },
           'item-3': {
-            video: assetUrl('/sample/seedance-1.5-3.mp4'),
+            video: storageUrl('/sample/seedance-1.5-3.mp4'),
           },
           'item-4': {
-            video: assetUrl('/sample/seedance-1.5-4.mp4'),
+            video: storageUrl('/sample/seedance-1.5-4.mp4'),
           },
         }}
       />

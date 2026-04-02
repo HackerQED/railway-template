@@ -32,7 +32,6 @@ export interface GenerationDetail {
   output: { url?: string; urls?: string[]; [key: string]: unknown } | null;
   error: { code?: string; message?: string } | null;
   comment: string | null;
-  projectId: string | null;
   createdAt: string;
   completedAt: string | null;
 }
@@ -275,28 +274,13 @@ export function GenerationDetailSheet({
             </div>
           )}
 
-          {/* Project link */}
-          {gen.projectId && (
-            <div className="text-sm">
-              <span className="text-muted-foreground">Project: </span>
-              <a
-                href={`/projects/${gen.projectId}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:underline"
-              >
-                View project →
-              </a>
-            </div>
-          )}
-
           {/* Download */}
           {url && (
             <Button
               className="w-full"
               onClick={() => {
                 const ext = isVideo ? 'mp4' : 'png';
-                downloadFile(url, `yino-${gen.id}.${ext}`);
+                downloadFile(url, `gen-${gen.id}.${ext}`);
               }}
             >
               <DownloadIcon className="size-4 mr-2" />

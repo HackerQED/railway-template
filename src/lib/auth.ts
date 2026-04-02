@@ -27,7 +27,7 @@ import { getBaseUrl, getUrlWithLocaleInCallbackUrl } from './urls/urls';
 export const auth = betterAuth({
   baseURL: getBaseUrl(),
   // https://www.better-auth.com/docs/reference/security#trusted-origins
-  trustedOrigins: [getBaseUrl(), 'https://yino.ai', 'https://www.yino.ai'],
+  trustedOrigins: [getBaseUrl()],
   appName: defaultMessages.Metadata.name,
   database: drizzleAdapter(await getDb(), {
     provider: 'pg', // or "mysql", "sqlite"

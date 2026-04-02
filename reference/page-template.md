@@ -92,7 +92,7 @@ export default async function {ModelName}Page() {
 
 ```json
 {
-  "title": "SEO title with primary keyword | yino.ai",
+  "title": "SEO title with primary keyword | Railway Template",
   "description": "Meta description, 150-160 chars",
   "hero": {
     "title": "Page heading with primary keyword",

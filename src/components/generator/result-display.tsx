@@ -265,7 +265,7 @@ function ResultContent({
             className="flex flex-1 items-center justify-center gap-2"
             onClick={() => {
               const ext = result.type === 'video' ? 'mp4' : 'png';
-              downloadFile(outputUrl, `yino-${Date.now()}.${ext}`);
+              downloadFile(outputUrl, `gen-${Date.now()}.${ext}`);
             }}
           >
             <DownloadIcon className="size-4" />

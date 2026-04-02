@@ -11,6 +11,6 @@ export const storageConfig: StorageConfig = {
   accessKeyId: process.env.STORAGE_ACCESS_KEY_ID || '',
   secretAccessKey: process.env.STORAGE_SECRET_ACCESS_KEY || '',
   bucketName: process.env.STORAGE_BUCKET_NAME || '',
-  publicUrl: process.env.STORAGE_PUBLIC_URL,
+  publicUrl: process.env.NEXT_PUBLIC_STORAGE_PUBLIC_URL,
   forcePathStyle: process.env.STORAGE_FORCE_PATH_STYLE !== 'false',
 };

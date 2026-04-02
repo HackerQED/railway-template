@@ -2,7 +2,7 @@ import { HeroTitle } from '@/components/blocks/hero/hero-title';
 import { HeroVideoBg } from '@/components/blocks/hero/hero-video-bg';
 import { AnimatedGroup } from '@/components/tailark/motion/animated-group';
 import { Button } from '@/components/ui/button';
-import { assetUrl } from '@/lib/assets';
+import { storageUrl } from '@/config/storage';
 import { Sparkles } from 'lucide-react';
 
 const transitionVariants = {
@@ -50,8 +50,8 @@ export default function HeroSection({ content }: HeroSectionProps) {
       <main id="hero" className="-mt-[72px]">
         <section>
           <HeroVideoBg
-            videoUrl={assetUrl('/sample/hero.mp4')}
-            posterUrl={assetUrl('/sample/hero-poster.jpg')}
+            videoUrl={storageUrl('/sample/hero.mp4')}
+            posterUrl={storageUrl('/sample/hero-poster.jpg')}
             className="pt-24 pb-16"
           >
             <div className="mx-auto max-w-7xl px-6">

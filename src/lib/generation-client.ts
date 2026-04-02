@@ -28,6 +28,7 @@ export interface GenerationSubmitParams {
   /** Seedance multi-media: images, videos, and audio URLs */
   media_urls?: string[];
   seed?: number;
+  [key: string]: unknown;
 }
 
 export interface GenerationSubmitResult {
@@ -47,16 +48,17 @@ export interface GenerationStatus {
 }
 
 /**
- * Submit a generation request to a model endpoint.
+ * Submit a generation request to the unified /api/generate endpoint.
+ * The model ID is included in the request body.
  */
 export async function submitGeneration(
-  endpoint: string,
+  modelId: string,
   params: GenerationSubmitParams
 ): Promise<GenerationSubmitResult> {
-  const res = await fetch(endpoint, {
+  const res = await fetch('/api/generate', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(params),
+    body: JSON.stringify({ model: modelId, ...params }),
   });
 
   const data = await res.json();
@@ -78,7 +80,7 @@ export async function fetchGenerationStatus(
   ids: string[]
 ): Promise<GenerationStatus[]> {
   const res = await fetch(
-    `/api/agent/generations/status?ids=${ids.join(',')}`,
+    `/api/generations/status?ids=${ids.join(',')}`,
     { method: 'GET' }
   );
 
@@ -98,7 +100,7 @@ export async function uploadFile(file: File): Promise<string> {
   const formData = new FormData();
   formData.append('file', file);
 
-  const res = await fetch('/api/agent/upload', {
+  const res = await fetch('/api/upload', {
     method: 'POST',
     body: formData,
   });

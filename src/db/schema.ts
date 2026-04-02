@@ -127,19 +127,6 @@ export const creditTransaction = pgTable("credit_transaction", {
 	creditTransactionGenerationIdIdx: index("credit_transaction_generation_id_idx").on(table.generationId),
 }));
 
-export const project = pgTable("project", {
-	id: text("id").primaryKey(),
-	userId: text("user_id").notNull().references(() => user.id, { onDelete: 'cascade' }),
-	title: text("title").notNull(),
-	status: text("status").notNull().default('active'), // 'active' | 'completed' | 'archived'
-	metadata: jsonb("metadata"), // extensible info (music URL, style description, etc.)
-	createdAt: timestamp("created_at").notNull().defaultNow(),
-	updatedAt: timestamp("updated_at").notNull().defaultNow(),
-}, (table) => ({
-	projectUserIdIdx: index("project_user_id_idx").on(table.userId),
-	projectStatusIdx: index("project_status_idx").on(table.status),
-}));
-
 export const generation = pgTable("generation", {
 	id: text("id").primaryKey(),
 	userId: text("user_id").notNull().references(() => user.id, { onDelete: 'cascade' }),
@@ -154,7 +141,6 @@ export const generation = pgTable("generation", {
 	error: jsonb("error"), // { code, message }
 	innerProviderCost: numeric("inner_provider_cost"), // NEVER expose — upstream cost in cents
 
-	projectId: text("project_id").references(() => project.id, { onDelete: 'set null' }),
 	comment: text("comment"),
 	sortOrder: integer("sort_order"),
 	startedAt: timestamp("started_at"),
@@ -167,18 +153,7 @@ export const generation = pgTable("generation", {
 	generationGeneratorIdIdx: index("generation_generator_id_idx").on(table.generatorId),
 	generationInnerProviderIdx: index("generation_inner_provider_idx").on(table.innerProvider),
 	generationStatusIdx: index("generation_status_idx").on(table.status),
-	generationProjectIdIdx: index("generation_project_id_idx").on(table.projectId),
 	generationCreatedAtIdx: index("generation_created_at_idx").on(table.createdAt),
-}));
-
-export const preview = pgTable("preview", {
-	id: text("id").primaryKey(),
-	projectId: text("project_id").notNull().unique().references(() => project.id, { onDelete: 'cascade' }),
-	blocks: jsonb("blocks").notNull(), // Block[]
-	createdAt: timestamp("created_at").notNull().defaultNow(),
-	updatedAt: timestamp("updated_at").notNull().defaultNow(),
-}, (table) => ({
-	previewProjectIdIdx: index("preview_project_id_idx").on(table.projectId),
 }));
 
 export const userConversion = pgTable("user_conversion", {

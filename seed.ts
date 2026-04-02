@@ -16,7 +16,7 @@ const DATABASE_URL = process.env.DATABASE_URL!;
 
 const TEST_ACCOUNTS = [
   {
-    email: 'test@yino.dev',
+    email: 'test@example.com',
     password: 'test-password-123',
     name: 'Test User',
   },
@@ -83,7 +83,7 @@ async function seed() {
     console.log('  To regenerate, revoke the existing key and re-run seed.');
   } else {
     const raw = randomBytes(24).toString('base64url');
-    const key = `yino_${raw}`;
+    const key = `rwtpl_${raw}`;
     const keyHash = createHash('sha256').update(key).digest('hex');
     const keyPrefix = key.slice(0, 12);
     const id = nanoid();

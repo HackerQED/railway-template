@@ -1,3 +1,4 @@
+import { FOLDERS } from '@/config/storage';
 import { isMocked } from '@/lib/mock';
 import { uploadFile } from '@/storage';
 import { nanoid } from 'nanoid';
@@ -59,7 +60,7 @@ export async function transferToR2(
   }
 
   const filename = `${nanoid()}.${ext}`;
-  const result = await uploadFile(buffer, filename, mimeType, 'generation');
+  const result = await uploadFile(buffer, filename, mimeType, FOLDERS.GENERATION);
   return result.url;
 }
 

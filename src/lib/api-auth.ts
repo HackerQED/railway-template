@@ -67,7 +67,7 @@ export async function generateApiKey(
   name: string
 ): Promise<{ key: string; id: string }> {
   const raw = randomBytes(24).toString('base64url');
-  const key = `yino_${raw}`;
+  const key = `rwtpl_${raw}`;
   const keyHash = hashKey(key);
   const keyPrefix = key.slice(0, 12);
   const id = nanoid();

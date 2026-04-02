@@ -1,4 +1,4 @@
-# CLAUDE.md — yino.ai 项目指导 + AI 自验证约定
+# CLAUDE.md — Railway Template 项目指导 + AI 自验证约定
 
 ## Git 工作流
 
@@ -91,20 +91,20 @@ curl -s http://localhost:3000/api/health | python3 -m json.tool
 
 ### 测试登录（拿 session cookie）
 ```bash
-curl -c /tmp/yino-cookies.txt -X POST http://localhost:3000/api/auth/sign-in/email \
+curl -c /tmp/rt-cookies.txt -X POST http://localhost:3000/api/auth/sign-in/email \
   -H "Content-Type: application/json" \
   -H "Origin: http://localhost:3000" \
-  -d '{"email":"test@yino.dev","password":"test-password-123"}'
+  -d '{"email":"test@example.com","password":"test-password-123"}'
 ```
 测试账号定义在 `seed.ts`，是唯一事实来源。
 
 ### 访问受保护端点
 ```bash
 # 验证 session 有效
-curl -b /tmp/yino-cookies.txt http://localhost:3000/api/auth/get-session
+curl -b /tmp/rt-cookies.txt http://localhost:3000/api/auth/get-session
 
 # 实验 API（返回当前用户 + 环境信息）
-curl -b /tmp/yino-cookies.txt http://localhost:3000/api/lab
+curl -b /tmp/rt-cookies.txt http://localhost:3000/api/lab
 
 # 无 cookie 应返回 401
 curl http://localhost:3000/api/lab
@@ -121,7 +121,7 @@ claude mcp add playwright -- npx @playwright/mcp@latest --headless --no-sandbox 
 
 MCP 模式下浏览器会话持久。通过页面内 fetch 登录（无需一键登录按钮）：
 1. `browser_navigate('http://localhost:3000')`
-2. `browser_evaluate` 执行：`await fetch('/api/auth/sign-in/email', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: 'test@yino.dev', password: 'test-password-123' }) })`
+2. `browser_evaluate` 执行：`await fetch('/api/auth/sign-in/email', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email: 'test@example.com', password: 'test-password-123' }) })`
 3. 登录后浏览器保持 cookie，可直接导航到受保护页面（如 `/gallery`）
 4. `browser_snapshot` 验证功能，`browser_take_screenshot` 验证视觉
 

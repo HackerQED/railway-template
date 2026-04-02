@@ -8,7 +8,7 @@ import type { GenerationItem } from './generations-view';
 import { GenerationsView } from './generations-view';
 
 export const metadata = constructMetadata({
-  title: 'Creation History - yino.ai',
+  title: 'Creation History - Railway Template',
   description: 'View and manage all your AI generations.',
   noIndex: true,
 });
@@ -30,7 +30,6 @@ export default async function GenerationsPage() {
       output: generation.output,
       error: generation.error,
       comment: generation.comment,
-      projectId: generation.projectId,
       createdAt: generation.createdAt,
       completedAt: generation.completedAt,
     })

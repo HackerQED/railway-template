@@ -254,7 +254,7 @@ export function GeneratorProvider({
       }
 
       const { task_id } = await submitGeneration(
-        model.endpoint,
+        model.id,
         params as unknown as Parameters<typeof submitGeneration>[1]
       );
 

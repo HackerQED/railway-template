@@ -70,8 +70,8 @@ export const websiteConfig: WebsiteConfig = {
   },
   mail: {
     provider: 'resend',
-    fromEmail: 'Yino AI <contact@yino.ai>',
-    supportEmail: 'Yino AI <contact@yino.ai>',
+    fromEmail: 'Railway Template <noreply@example.com>',
+    supportEmail: 'Railway Template <support@example.com>',
   },
   newsletter: {
     enable: true,

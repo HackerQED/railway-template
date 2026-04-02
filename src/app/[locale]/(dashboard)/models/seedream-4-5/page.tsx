@@ -13,7 +13,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb';
-import { assetUrl } from '@/lib/assets';
+import { storageUrl } from '@/config/storage';
 import { constructMetadata } from '@/lib/metadata';
 import type { Metadata } from 'next';
 import type { Locale } from 'next-intl';
@@ -64,16 +64,16 @@ export default async function SeedreamPage() {
         content={t.raw('features')}
         media={{
           'item-1': {
-            image: assetUrl('/sample/seedream4.5-1.png'),
+            image: storageUrl('/sample/seedream4.5-1.png'),
           },
           'item-2': {
-            image: assetUrl('/sample/seedream4.5-2.png'),
+            image: storageUrl('/sample/seedream4.5-2.png'),
           },
           'item-3': {
-            image: assetUrl('/sample/seedream4.5-3.png'),
+            image: storageUrl('/sample/seedream4.5-3.png'),
           },
           'item-4': {
-            image: assetUrl('/sample/seedream4.5-4.png'),
+            image: storageUrl('/sample/seedream4.5-4.png'),
           },
         }}
       />

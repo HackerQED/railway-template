@@ -1,8 +1,7 @@
-import { assetUrl } from '@/lib/assets';
+import { storageUrl } from '@/config/storage';
 
 /**
- * Frontend model registry — single source of truth for all consumer-facing
- * model configurations. Linked to backend CAPABILITIES_MAP by API endpoint.
+ * Model registry — single source of truth for all model configurations.
  *
  * To add a new model:
  * 1. Add entry to MODELS array below
@@ -67,8 +66,6 @@ export type ModelConfig = {
   icon: string;
   /** Tags displayed as badges */
   tags: string[];
-  /** API endpoint path */
-  endpoint: string;
   /** Generation modes this model supports */
   modes: GenerationMode[];
   /** Model-specific parameters */
@@ -102,7 +99,6 @@ export const MODELS: ModelConfig[] = [
     slug: 'seedream-4-5',
     icon: '/icons/bytedance.png',
     tags: ['Text to Image', 'Image Editing'],
-    endpoint: '/api/agent/models/seedream-4-5',
     modes: [
       {
         id: 'image-editing',
@@ -145,18 +141,17 @@ export const MODELS: ModelConfig[] = [
       },
     ],
     creditCost: 10,
-    sampleMedia: assetUrl('/sample/seedream4.5-1.png'),
+    sampleMedia: storageUrl('/sample/seedream4.5-1.png'),
   },
   {
     id: 'seedance-2-0-human',
     name: 'Seedance 2.0',
     description:
-      'Seedance 2.0 with real-person support — direct API, half price. Only on yino.ai.',
+      'Seedance 2.0 with real-person support — direct API, half price.',
     category: 'video',
     slug: 'seedance-2-0',
     icon: '/icons/bytedance.png',
     tags: ['Text to Video', 'Image to Video', 'Real Person'],
-    endpoint: '/api/agent/models/seedance-2-0-human',
     featured: true,
     modes: [
       {
@@ -216,7 +211,7 @@ export const MODELS: ModelConfig[] = [
       if (omni) cost *= 2;
       return cost;
     },
-    sampleMedia: assetUrl('/sample/seedance-2-2.mp4'),
+    sampleMedia: storageUrl('/sample/seedance-2-2.mp4'),
     estimatedTime: '8–10 min',
   },
   {
@@ -228,7 +223,6 @@ export const MODELS: ModelConfig[] = [
     slug: 'seedance-1-5',
     icon: '/icons/bytedance.png',
     tags: ['Text to Video', 'Image to Video', 'Video Extend'],
-    endpoint: '/api/agent/models/seedance-1-5',
     modes: [
       {
         id: 'text-to-video',
@@ -324,7 +318,7 @@ export const MODELS: ModelConfig[] = [
       if (p.generate_audio === 'false') cost = Math.round(cost / 2);
       return cost;
     },
-    sampleMedia: assetUrl('/sample/seedance-1.5-1.mp4'),
+    sampleMedia: storageUrl('/sample/seedance-1.5-1.mp4'),
   },
   {
     id: 'veo-3-1',
@@ -335,7 +329,6 @@ export const MODELS: ModelConfig[] = [
     slug: 'veo-3-1',
     icon: '/icons/veo.png',
     tags: ['Keyframes', 'Reference', 'Text to Video'],
-    endpoint: '/api/agent/models/veo-3-1',
     modes: [
       {
         id: 'keyframes',
@@ -381,7 +374,7 @@ export const MODELS: ModelConfig[] = [
     ],
     creditCost: 30,
     resolveCost: (p) => (p.model === 'standard' ? 200 : 30),
-    sampleMedia: assetUrl('/sample/veo3.1-1.mp4'),
+    sampleMedia: storageUrl('/sample/veo3.1-1.mp4'),
   },
 ];
 

@@ -50,8 +50,8 @@ description: Write SEO-optimized web copy — page titles, meta descriptions, he
 - 品牌名用管道符 `|` 分隔放末尾
 - 一级二级尽量都在 title 中出现，title 重点一级
 
-差：`yino.ai - The Best AI Platform for Everything`
-好：`AI Music Video Generator — Create Videos from Any Song | yino.ai`
+差：`Railway Template - The Best AI Platform for Everything`
+好：`AI Music Video Generator — Create Videos from Any Song | Railway Template`
 
 ### Description
 
@@ -61,7 +61,7 @@ description: Write SEO-optimized web copy — page titles, meta descriptions, he
 - 一级二级尽量都出现，description 覆盖二级
 - 为人类而写——这是搜索结果中用户看到的内容
 
-差：`yino.ai is an AI platform that uses AI to generate videos and images using artificial intelligence models.`
+差：`Railway Template is an AI platform that uses AI to generate videos and images using artificial intelligence models.`
 好：`Generate stunning AI music videos from any song. Powered by Seedream, Veo & top AI models. Use the web app or integrate with your AI agent.`
 
 ### 其他 meta

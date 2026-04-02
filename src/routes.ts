@@ -19,7 +19,7 @@ export enum Routes {
   AuthError = '/auth/error',
 
   // All [dashboard] buttons points to this, the main entry of the web app
-  DashboardEntry = '/models/seedance-2-0',
+  DashboardEntry = '/models/seedream-4-5',
 
   // Model pages (dynamic route /models/[slug], public with sidebar layout)
   AllModels = '/models',
@@ -29,8 +29,6 @@ export enum Routes {
 
   // Legacy routes (kept for reference)
   ToolsGenerate = '/generate',
-
-  Projects = '/projects',
 
   SettingsCredits = '/settings/credits',
   SettingsApiKeys = '/settings/api-keys',
