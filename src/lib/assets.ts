@@ -1,9 +1,9 @@
 /**
  * Public assets base URL — configurable via NEXT_PUBLIC_ASSETS_URL.
- * Defaults to https://assets.yino.ai for backward compatibility.
+ * Set this env var to your own CDN/S3 bucket URL.
  */
 export const ASSETS_BASE_URL =
-  process.env.NEXT_PUBLIC_ASSETS_URL || 'https://assets.yino.ai';
+  process.env.NEXT_PUBLIC_ASSETS_URL || '';
 
 /**
  * Build a full URL for a public asset.
@@ -20,6 +20,6 @@ export function assetsHostname(): string {
   try {
     return new URL(ASSETS_BASE_URL).hostname;
   } catch {
-    return 'assets.yino.ai';
+    return '';
   }
 }

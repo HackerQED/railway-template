@@ -280,7 +280,7 @@ export function GenerationDetailSheet({
               className="w-full"
               onClick={() => {
                 const ext = isVideo ? 'mp4' : 'png';
-                downloadFile(url, `yino-${gen.id}.${ext}`);
+                downloadFile(url, `gen-${gen.id}.${ext}`);
               }}
             >
               <DownloadIcon className="size-4 mr-2" />

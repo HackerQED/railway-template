@@ -2,7 +2,7 @@ import ApiKeysPageClient from '@/components/settings/api-keys/api-keys-page-clie
 import { constructMetadata } from '@/lib/metadata';
 
 export const metadata = constructMetadata({
-  title: 'API Keys - yino.ai',
+  title: 'API Keys - Railway Template',
   description: 'Manage your API keys for programmatic access.',
   noIndex: true,
 });

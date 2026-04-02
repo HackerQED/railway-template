@@ -5,7 +5,7 @@ import { Routes } from '@/routes';
 import { redirect } from 'next/navigation';
 
 export const metadata = constructMetadata({
-  title: 'Plan & Credits - yino.ai',
+  title: 'Plan & Credits - Railway Template',
   description:
     'Manage your subscription plan, credit balance, and transactions.',
   noIndex: true,

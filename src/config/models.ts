@@ -150,7 +150,7 @@ export const MODELS: ModelConfig[] = [
     id: 'seedance-2-0-human',
     name: 'Seedance 2.0',
     description:
-      'Seedance 2.0 with real-person support — direct API, half price. Only on yino.ai.',
+      'Seedance 2.0 with real-person support — direct API, half price.',
     category: 'video',
     slug: 'seedance-2-0',
     icon: '/icons/bytedance.png',

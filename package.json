@@ -1,5 +1,5 @@
 {
-  "name": "yino-ai",
+  "name": "railway-template",
   "version": "0.1.0",
   "private": true,
   "packageManager": "pnpm@10.26.1",
@@ -27,7 +27,7 @@
     "content": "fumadocs-mdx",
     "email": "email dev --dir src/mail/templates --port 3333",
     "knip": "knip",
-    "dev:skill-sync": "rsync -av --delete skills/yino-ai/ ../cc-music-video-playground/.claude/skills/yino-ai/"
+    "dev:skill-sync": "echo 'skill-sync not configured'"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1012.0",

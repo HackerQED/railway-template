@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "name": "yino.ai",
-    "title": "yino.ai",
+    "name": "Railway Template",
+    "title": "Railway Template",
     "description": "AI Video & Image Generator"
   },
   "Common": {
@@ -154,8 +154,8 @@
     "previousPage": "Previous",
     "nextPage": "Next",
     "chooseLanguage": "Select language",
-    "title": "yino.ai Docs",
-    "homepage": "Back to yino.ai",
+    "title": "Railway Template Docs",
+    "homepage": "Back to Railway Template",
     "PageActions": {
       "copyMarkdown": "Copy Markdown",
       "open": "Open",

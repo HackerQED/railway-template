@@ -2,7 +2,7 @@
 
 ## 待做
 
-- [x] yino-ai Skill 调优（prompt、参数、错误处理等）
+- [x] railway-template Skill 调优（prompt、参数、错误处理等）
 - [ ] 界面开发（Agent First 方向的新 UI）
 - [ ] 清理项目中残留的 MkSaaS 品牌引用
 
@@ -22,4 +22,4 @@
 - [x] #40 Agent API：生成能力 + 发现机制 + 双轨鉴权
 - [x] #41 API Key 管理界面 + 删除 lab API
 - [x] #42 Skill 托管迁移到 ClawHub，清除自托管 skill route
-- [x] #43 yino-ai Skill + 文档清理 + Veo 3.1 更名
+- [x] #43 railway-template Skill + 文档清理 + Veo 3.1 更名

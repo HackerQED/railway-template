@@ -25,7 +25,7 @@ export async function GET(request: NextRequest) {
 
   try {
     const upstream = await fetch(url, {
-      headers: { 'User-Agent': 'yino.ai/1.0' },
+      headers: { 'User-Agent': 'railway-template/1.0' },
     });
 
     if (!upstream.ok) {

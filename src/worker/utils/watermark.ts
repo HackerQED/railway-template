@@ -7,7 +7,7 @@ import sharp from 'sharp';
 
 const execFileAsync = promisify(execFile);
 
-const SITE_NAME = 'yino.ai';
+const SITE_NAME = 'Railway Template';
 const LINE1 = `❤️ Thank you for trying ${SITE_NAME} ❤️`;
 const LINE2 = 'Purchase to enjoy no watermark and support us';
 
