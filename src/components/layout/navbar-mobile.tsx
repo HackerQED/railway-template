@@ -11,12 +11,12 @@ import {
   CollapsibleTrigger,
 } from '@/components/ui/collapsible';
 import { useNavbarLinks } from '@/config/navbar-config';
+import { websiteConfig } from '@/config/website';
+import { useCreditBalance } from '@/hooks/use-credits';
 import { LocaleLink, useLocalePathname } from '@/i18n/navigation';
 import { authClient } from '@/lib/auth-client';
 import { cn } from '@/lib/utils';
 import { Routes } from '@/routes';
-import { websiteConfig } from '@/config/website';
-import { useCreditBalance } from '@/hooks/use-credits';
 import { Portal } from '@radix-ui/react-portal';
 import {
   ArrowUpRightIcon,
@@ -153,7 +153,11 @@ interface MainMobileMenuProps {
   onLinkClicked: () => void;
 }
 
-function MainMobileMenu({ userLoggedIn, userId, onLinkClicked }: MainMobileMenuProps) {
+function MainMobileMenu({
+  userLoggedIn,
+  userId,
+  onLinkClicked,
+}: MainMobileMenuProps) {
   const [expanded, setExpanded] = React.useState<Record<string, boolean>>({});
   const t = useTranslations();
   const menuLinks = useNavbarLinks();

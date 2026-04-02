@@ -10,7 +10,6 @@ import { sanitizeErrorMessage } from '@/lib/sanitize-error';
 import { uploadFile } from '@/storage';
 import type { NextRequest } from 'next/server';
 
-
 const SUPPORTED_IMAGE_TYPES = ['image/jpeg', 'image/png', 'image/webp'];
 
 export async function POST(request: NextRequest) {
@@ -19,10 +18,7 @@ export async function POST(request: NextRequest) {
 
   const formData = await request.formData().catch(() => null);
   if (!formData) {
-    return apiError(
-      'Expected multipart/form-data with a "file" field',
-      400
-    );
+    return apiError('Expected multipart/form-data with a "file" field', 400);
   }
 
   const file = formData.get('file');
@@ -47,7 +43,12 @@ export async function POST(request: NextRequest) {
 
   try {
     const buffer = Buffer.from(await file.arrayBuffer());
-    const result = await uploadFile(buffer, file.name, file.type, FOLDERS.UPLOADS);
+    const result = await uploadFile(
+      buffer,
+      file.name,
+      file.type,
+      FOLDERS.UPLOADS
+    );
     return apiSuccess(result);
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err);
